@@ -1,0 +1,116 @@
+<!-- /src/index.html -->
+<!DOCTYPE html>
+<head>
+    <title>My A-Frame Scene</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script> 
+    <script src="https://unpkg.com/aframe-template-component@^3.1.1/dist/aframe-template-component.min.js"></script> 
+    <script src="https://unpkg.com/aframe-multi-video-component/dist/aframe-multi-video-component.min.js"></script>
+   </head>
+
+  <body>
+      <script type="text/javascript">
+          // Component to activate spaceship animation on click
+        AFRAME.registerComponent('boxlistner', {
+          init: function () {
+            var var_sphere = document.getElementById("ent_sphere");
+            this.el.addEventListener('mouseenter', function (evt) {
+              var_sphere.setAttribute('visible', 'true');
+            });
+            this.el.addEventListener('mouseleave', function (evt) {
+              var_sphere.setAttribute('visible', 'false');
+            });
+          }
+        });
+      </script>
+      <script type="text/javascript">
+          // Component to activate spaceship animation on click
+        AFRAME.registerComponent('spherelistner', {
+          init: function () {
+            var var_box = document.getElementById("ent_box");
+            var var_ent_vid = document.getElementById('ent_vid');
+            var var_cylinder = document.getElementById("ent_cylinder");
+            this.el.addEventListener('click', function (evt) {
+              var_box.setAttribute('visible', 'false');
+              var_cylinder.setAttribute('visible', 'true');
+              this.setAttribute('visible', 'false');              
+              var_ent_vid.setAttribute('visible', 'false');
+            });
+          }
+        });
+      </script>
+      <script type="text/javascript">
+          // Component to activate spaceship animation on click
+        AFRAME.registerComponent('cylinderlistner', {
+          init: function () {
+            var var_box = document.getElementById("ent_box");
+            var vid = document.getElementById('vid');
+            var var_ent_vid = document.getElementById('ent_vid');
+            this.el.addEventListener('click', function (evt) {
+              var_box.setAttribute('visible', 'true');
+              this.setAttribute('visible', 'false');
+              var_ent_vid.setAttribute('visible', 'true');
+            });
+          }
+        });
+      </script>
+      <a-scene>
+      <a-assets>
+          <script id="box" type="text/x-nunjucks-template">
+            <img id="boxtexture" src="https://i.imgur.com/mYmmbrp.jpg" crossOrigin="anonymous">
+            <a-box src="#boxtexture" position="27 8 11.525" scale="15 15 15" rotation="0 -130 0" radius="1.25" color="#00FFFF"></a-box>
+            </script>
+          <script id="sphere" type="text/x-nunjucks-template">
+            <a-image src="img/ImageMouseOver.jpg" position="10 10 24" scale="20 20 20" rotation="0 -150 0 "  ></a-image>
+          </script>
+          <script id="cylinder" type="text/x-nunjucks-template">
+           <a-image src="img/ImageDetails.jpg" position="10 10 24" scale="30 30 30" rotation="0 -150 0 " ></a-image>
+           <a-sky src="img/insideCave2.jpg" ></a-sky>
+          </script>
+
+      </a-assets>
+      <a-assets>
+          <video muted id="vid" src="video/video2 new.mp4"
+          crossOrigin="anonymous"
+          autoplay="false"
+          loop="true"
+          style="display: none"></video>
+      </a-assets>
+      <a-entity camera look-controls>
+          <a-entity cursor="fuse: false; fuseTimeout: 500"
+                    position="0 0 -1"
+                    geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                    material="color: black; shader: flat">
+          </a-entity>
+        </a-entity>
+    
+    <a-entity id="ent_box" template='src: #box' visible='false' boxlistner></a-entity>
+    <a-entity id="ent_sphere" template='src: #sphere' visible='false' spherelistner></a-entity>
+    <a-entity id="ent_cylinder" template='src: #cylinder' visible='false' cylinderlistner></a-entity>
+    <a-video id="ent_vid" geometry="primitive: sphere;
+      radius: 5000;
+      segmentsWidth: 64;
+      segmentsHeight: 64;"
+      material="shader: flat; src: #vid;"
+      scale="-1 1 1"
+      visible="true">
+    </a-video>  
+    <audio id="opening" src="audio/audio1.mp3"></a-audio>  
+    </a-scene>
+    <script type="text/javascript">
+      var vid = document.getElementById('vid');
+      var var_box = document.getElementById("ent_box");
+      vid.play();
+      setTimeout(function(){
+        vid.setAttribute('src', 'video/video1.mp4');
+        vid.play();
+        var_box.setAttribute('visible', 'true');
+        },28000);
+    </script>
+    <script type="text/javascript">
+      var ent_aud = document.getElementById('opening');
+      setTimeout(function(){
+        ent_aud.play()
+        },5000);
+    </script>
+
+  </body>

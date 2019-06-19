@@ -10,365 +10,386 @@
 
   <body>
       <script type="text/javascript">
-      AFRAME.registerComponent('box0listner', {
-              init: function () {
-                  var var_text1 = document.getElementById("id_text1");
-                  var var_text2 = document.getElementById("id_text2");
-                  var var_text3 = document.getElementById("id_text3");
-                  var var_text4 = document.getElementById("id_text4");
-                  var var_text5 = document.getElementById("id_text5");
-                  var var_box1 = document.getElementById("ent_box2");
-                  var var_box2 = document.getElementById("ent_box2");
-                  var var_box3 = document.getElementById("ent_box3");
-                  var var_box4 = document.getElementById("ent_box4");
-                  var var_box5 = document.getElementById("ent_box5");
-                  var vid = document.getElementById('ent_vid');
-                  var var_back = document.getElementById('back');
-                  var var_scene3_0 = document.getElementById("ent_scene3_0");
-                  var var_complete = document.getElementById("complete");
-                  this.el.addEventListener('mouseenter', function (evt) {
-                      var_text1.setAttribute('visible', 'true');
-                  });
-                  this.el.addEventListener('mouseleave', function (evt) {
-                      var_text1.setAttribute('visible', 'false');
-                  });
-                  this.el.addEventListener('click', function (evt) {
-                      var_scene3_0.setAttribute('visible', 'true');
-                      var_back.setAttribute('visible', 'true');
-                      vid.setAttribute('visible', 'false');
-                      var_box1.setAttribute('visible', 'false');
-                      var_box2.setAttribute('visible', 'false');
-                      var_box3.setAttribute('visible', 'false');
-                      var_box4.setAttribute('visible', 'false');
-                      var_box5.setAttribute('visible', 'false');
-                      this.setAttribute('visible', 'false');
-                      var_text1.setAttribute('value', '');
-                      var_text2.setAttribute('value', '');
-                      var_text3.setAttribute('value', '');
-                      var_text4.setAttribute('value', '');
-                      var_text5.setAttribute('value', '');
-                      var_back.setAttribute('visible', 'true');
-                      vid.setAttribute('visible', 'false');
-                      var_complete.setAttribute('visible', 'false');
-                  });
-              }
-          });
-          AFRAME.registerComponent('box1listner', {
-              init: function () {
-                  var var_text1 = document.getElementById("id_text1");
-                  var var_text2 = document.getElementById("id_text2");
-                  var var_text3 = document.getElementById("id_text3");
-                  var var_text4 = document.getElementById("id_text4");
-                  var var_text5 = document.getElementById("id_text5");
-                  var var_box0 = document.getElementById("ent_box0");
-                  var var_box2 = document.getElementById("ent_box2");
-                  var var_box3 = document.getElementById("ent_box3");
-                  var var_box4 = document.getElementById("ent_box4");
-                  var var_box5 = document.getElementById("ent_box5");
-                  var vid = document.getElementById('ent_vid');
-                  var var_back = document.getElementById('back');
-                  var var_scene3_1 = document.getElementById("ent_scene3_1");
-                  var var_complete = document.getElementById("complete");
-                  this.el.addEventListener('mouseenter', function (evt) {
-                      var_text1.setAttribute('visible', 'true');
-                  });
-                  this.el.addEventListener('mouseleave', function (evt) {
-                      var_text1.setAttribute('visible', 'false');
-                  });
-                  this.el.addEventListener('click', function (evt) {
-                      var_scene3_1.setAttribute('visible', 'true');
-                      var_back.setAttribute('visible', 'true');
-                      vid.setAttribute('visible', 'false');
-                      var_box0.setAttribute('visible', 'false');
-                      var_box2.setAttribute('visible', 'false');
-                      var_box3.setAttribute('visible', 'false');
-                      var_box4.setAttribute('visible', 'false');
-                      var_box5.setAttribute('visible', 'false');
-                      this.setAttribute('visible', 'false');
-                      var_text1.setAttribute('value', '');
-                      var_text2.setAttribute('value', '');
-                      var_text3.setAttribute('value', '');
-                      var_text4.setAttribute('value', '');
-                      var_text5.setAttribute('value', '');
-                      var_back.setAttribute('visible', 'true');
-                      vid.setAttribute('visible', 'false');
-                      var_complete.setAttribute('visible', 'false');
-                  });
-              }
-          });
-          AFRAME.registerComponent('box2listner', {
-              init: function () {
-                  var var_scene3_2 = document.getElementById("ent_scene3_2");
-                  var vid = document.getElementById('ent_vid');
-                  var var_back = document.getElementById('back');
-                  var var_text1 = document.getElementById("id_text1");
-                  var var_text2 = document.getElementById("id_text2");
-                  var var_text3 = document.getElementById("id_text3");
-                  var var_text4 = document.getElementById("id_text4");
-                  var var_text5 = document.getElementById("id_text5");
-                  var var_box0 = document.getElementById("ent_box0");
-                  var var_box1 = document.getElementById("ent_box1");
-                  var var_box3 = document.getElementById("ent_box3");
-                  var var_box4 = document.getElementById("ent_box4");
-                  var var_box5 = document.getElementById("ent_box5");
-                  var var_complete = document.getElementById("complete");
-                  this.el.addEventListener('mouseenter', function (evt) {
-                      var_text2.setAttribute('visible', 'true');
-                  });
-                  this.el.addEventListener('mouseleave', function (evt) {
-                      var_text2.setAttribute('visible', 'false');
-                  });
-                  this.el.addEventListener('click', function (evt) {
-                      var_scene3_2.setAttribute('visible', 'true');
-                      var_back.setAttribute('visible', 'true');
-                      var_back.setAttribute('position', '0 -18 -30');
-                      vid.setAttribute('visible', 'false');
-                      var_box0.setAttribute('visible', 'false');
-                      var_box1.setAttribute('visible', 'false');
-                      var_box3.setAttribute('visible', 'false');
-                      var_box4.setAttribute('visible', 'false');
-                      var_box5.setAttribute('visible', 'false');
-                      var_text1.setAttribute('value', '');
-                      var_text2.setAttribute('value', '');
-                      var_text3.setAttribute('value', '');
-                      var_text4.setAttribute('value', '');
-                      var_text5.setAttribute('value', '');
-                      this.setAttribute('visible', 'false');
-                      var_complete.setAttribute('visible', 'false');
-
-                  });
-              }
-          });
-          AFRAME.registerComponent('box3listner', {
-              init: function () {
-                  var var_text1 = document.getElementById("id_text1");
-                  var var_text2 = document.getElementById("id_text2");
-                  var var_text3 = document.getElementById("id_text3");
-                  var var_text4 = document.getElementById("id_text4");
-                  var var_text5 = document.getElementById("id_text5");
-                  var var_box0 = document.getElementById("ent_box0");
-                  var var_box2 = document.getElementById("ent_box2");
-                  var var_box1 = document.getElementById("ent_box1");
-                  var var_box4 = document.getElementById("ent_box4");
-                  var var_box5 = document.getElementById("ent_box5");
-                  var vid = document.getElementById('ent_vid');
-                  var var_back = document.getElementById('back');
-                  var var_scene3_3 = document.getElementById("ent_scene3_3");
-                  var var_complete = document.getElementById("complete");
-                  this.el.addEventListener('mouseenter', function (evt) {
-                      var_text3.setAttribute('visible', 'true');
-                  });
-                  this.el.addEventListener('mouseleave', function (evt) {
-                      var_text3.setAttribute('visible', 'false');
-                  });
-                  this.el.addEventListener('click', function (evt) {
-                      var_scene3_3.setAttribute('visible', 'true');
-                      var_back.setAttribute('visible', 'true');
-                      var_back.setAttribute('position', '0 -18 -30');
-                      vid.setAttribute('visible', 'false');
-                      var_box0.setAttribute('visible', 'false');
-                      var_box2.setAttribute('visible', 'false');
-                      var_box1.setAttribute('visible', 'false');
-                      var_box4.setAttribute('visible', 'false');
-                      var_box5.setAttribute('visible', 'false');
-                      this.setAttribute('visible', 'false');
-                      var_text1.setAttribute('value', '');
-                      var_text2.setAttribute('value', '');
-                      var_text3.setAttribute('value', '');
-                      var_text4.setAttribute('value', '');
-                      var_text5.setAttribute('value', '');
-                      var_back.setAttribute('visible', 'true');
-                      vid.setAttribute('visible', 'false');
-                      var_complete.setAttribute('visible', 'false');
-                  });
-              }
-          });
-          AFRAME.registerComponent('box4listner', {
-              init: function () {
-                  var var_text1 = document.getElementById("id_text1");
-                  var var_text2 = document.getElementById("id_text2");
-                  var var_text3 = document.getElementById("id_text3");
-                  var var_text4 = document.getElementById("id_text4");
-                  var var_text5 = document.getElementById("id_text5");
-                  var var_box0 = document.getElementById("ent_box0");
-                  var var_box2 = document.getElementById("ent_box2");
-                  var var_box3 = document.getElementById("ent_box3");
-                  var var_box4 = document.getElementById("ent_box4");
-                  var var_box5 = document.getElementById("ent_box5");
-                  var vid = document.getElementById('ent_vid');
-                  var var_back = document.getElementById('back');
-                  var var_scene3_4 = document.getElementById("ent_scene3_4");
-                  var var_complete = document.getElementById("complete");
-                  this.el.addEventListener('mouseenter', function (evt) {
-                      var_text4.setAttribute('visible', 'true');
-                  });
-                  this.el.addEventListener('mouseleave', function (evt) {
-                      var_text4.setAttribute('visible', 'false');
-                  });
-                  this.el.addEventListener('click', function (evt) {
-                      var_scene3_4.setAttribute('visible', 'true');
-                      var_back.setAttribute('visible', 'true');
-                      var_back.setAttribute('position', '0 -18 -30');
-                      vid.setAttribute('visible', 'false');
-                      var_box0.setAttribute('visible', 'false');
-                      var_box2.setAttribute('visible', 'false');
-                      var_box1.setAttribute('visible', 'false');
-                      var_box3.setAttribute('visible', 'false');
-                      var_box5.setAttribute('visible', 'false');
-                      this.setAttribute('visible', 'false');
-                      var_text1.setAttribute('value', '');
-                      var_text2.setAttribute('value', '');
-                      var_text3.setAttribute('value', '');
-                      var_text4.setAttribute('value', '');
-                      var_text5.setAttribute('value', '');
-                      var_back.setAttribute('visible', 'true');
-                      vid.setAttribute('visible', 'false');
-                      var_complete.setAttribute('visible', 'false');
-                  });
-              }
-          });
-          AFRAME.registerComponent('box5listner', {
-              init: function () {
-                  var var_text1 = document.getElementById("id_text1");
-                  var var_text2 = document.getElementById("id_text2");
-                  var var_text3 = document.getElementById("id_text3");
-                  var var_text4 = document.getElementById("id_text4");
-                  var var_text5 = document.getElementById("id_text5");
-                  var var_box0 = document.getElementById("ent_box0");
-                  var var_box2 = document.getElementById("ent_box2");
-                  var var_box3 = document.getElementById("ent_box3");
-                  var var_box4 = document.getElementById("ent_box4");
-                  var var_box1 = document.getElementById("ent_box1");
-                  var vid = document.getElementById('ent_vid');
-                  var var_back = document.getElementById('back');
-                  var var_scene3_5 = document.getElementById("ent_scene3_5");
-                  var var_complete = document.getElementById("complete");
-                  this.el.addEventListener('mouseenter', function (evt) {
-                      var_text5.setAttribute('visible', 'true');
-                  });
-                  this.el.addEventListener('mouseleave', function (evt) {
-                      var_text5.setAttribute('visible', 'false');
-                  });
-                  this.el.addEventListener('click', function (evt) {
-                      var_scene3_5.setAttribute('visible', 'true');
-                      var_back.setAttribute('visible', 'true');
-                      var_back.setAttribute('position', '0 -18 -30');
-                      vid.setAttribute('visible', 'false');
-                      var_box0.setAttribute('visible', 'false');
-                      var_box2.setAttribute('visible', 'false');
-                      var_box1.setAttribute('visible', 'false');
-                      var_box4.setAttribute('visible', 'false');
-                      var_box3.setAttribute('visible', 'false');
-                      this.setAttribute('visible', 'false');
-                      var_text1.setAttribute('value', '');
-                      var_text2.setAttribute('value', '');
-                      var_text3.setAttribute('value', '');
-                      var_text4.setAttribute('value', '');
-                      var_text5.setAttribute('value', '');
-                      var_back.setAttribute('visible', 'true');
-                      vid.setAttribute('visible', 'false');
-                      var_complete.setAttribute('visible', 'false');
-                  });
-              }
-          });
-          AFRAME.registerComponent('control-goback', {
-              init: function () {
-                  var vid = document.getElementById('ent_vid');
-                  var var_scene3_0 = document.getElementById("ent_scene3_0");
-                  var var_scene3_1 = document.getElementById("ent_scene3_1");
-                  var var_scene3_2 = document.getElementById("ent_scene3_2");
-                  var var_scene3_3 = document.getElementById("ent_scene3_3");
-                  var var_scene3_4 = document.getElementById("ent_scene3_4");
-                  var var_scene3_5 = document.getElementById("ent_scene3_5");
-                  var var_box0 = document.getElementById("ent_box0");
-                  var var_box1 = document.getElementById("ent_box1");
-                  var var_box2 = document.getElementById("ent_box2");
-                  var var_box3 = document.getElementById("ent_box3");
-                  var var_box4 = document.getElementById("ent_box4");
-                  var var_box5 = document.getElementById("ent_box5");
-                  var var_text1 = document.getElementById("id_text1");
-                  var var_text2 = document.getElementById("id_text2");
-                  var var_text3 = document.getElementById("id_text3");
-                  var var_text4 = document.getElementById("id_text4");
-                  var var_text5 = document.getElementById("id_text5");
-                  var var_complete = document.getElementById("complete");
-                  this.el.addEventListener('click', function (evt) {
-                      this.setAttribute('visible', 'false');
-                      var_box0.setAttribute('visible', 'true');
-                      var_box1.setAttribute('visible', 'true');
-                      vid.setAttribute('visible', 'true');
-                      var_scene3_0.setAttribute('visible', 'false');
-                      var_scene3_1.setAttribute('visible', 'false');
-                      var_scene3_2.setAttribute('visible', 'false');
-                      var_scene3_3.setAttribute('visible', 'false');
-                      var_scene3_4.setAttribute('visible', 'false');
-                      var_scene3_5.setAttribute('visible', 'false');
-                      var_box2.setAttribute('visible', 'true');
-                      var_box3.setAttribute('visible', 'true');
-                      var_box4.setAttribute('visible', 'true');
-                      var_box5.setAttribute('visible', 'true');
-                      var_text1.setAttribute('value', '1. Managed\n2. Adversory\n3. Execution');
-                      var_text2.setAttribute('value', '1. Products Offerings\n2. Service Offerings');
-                      var_text3.setAttribute('value', '1. Art Advisory\n2. Philanthropy');
-                      var_text4.setAttribute('value', '1. Strategic Option\n2. Investment Opportunities\n3. Assets accepted as security\n4. Flexibility Of  Theme');
-                      var_text5.setAttribute('value', '1. Line1\n2. Line 2');
-                      var_complete.setAttribute('visible', 'true');
-                  });
-              }
-          });
-          AFRAME.registerComponent('control-complete', {
-              init: function () {
-                  var vid = document.getElementById('ent_vid');
-                  var var_scene3_0 = document.getElementById("ent_scene3_0");
-                  var var_scene3_1 = document.getElementById("ent_scene3_1");
-                  var var_scene3_2 = document.getElementById("ent_scene3_2");
-                  var var_scene3_3 = document.getElementById("ent_scene3_3");
-                  var var_scene3_4 = document.getElementById("ent_scene3_4");
-                  var var_scene3_5 = document.getElementById("ent_scene3_5");
-                  var var_box0 = document.getElementById("ent_box0");
-                  var var_box1 = document.getElementById("ent_box1");
-                  var var_box2 = document.getElementById("ent_box2");
-                  var var_box3 = document.getElementById("ent_box3");
-                  var var_box4 = document.getElementById("ent_box4");
-                  var var_box5 = document.getElementById("ent_box5");
-                  var var_text1 = document.getElementById("id_text1");
-                  var var_text2 = document.getElementById("id_text2");
-                  var var_text3 = document.getElementById("id_text3");
-                  var var_text4 = document.getElementById("id_text4");
-                  var var_text5 = document.getElementById("id_text5");
-                  var var_back = document.getElementById("back");
-                  var var_thankyou = document.getElementById("ent_thankyou");
-                  this.el.addEventListener('click', function (evt) {
-                      this.setAttribute('visible', 'false');
-                      var_box0.setAttribute('visible', 'false');
-                      var_box1.setAttribute('visible', 'false');
-                      vid.setAttribute('visible', 'false');
-                      var_scene3_0.setAttribute('visible', 'false');
-                      var_scene3_1.setAttribute('visible', 'false');
-                      var_scene3_2.setAttribute('visible', 'false');
-                      var_scene3_3.setAttribute('visible', 'false');
-                      var_scene3_4.setAttribute('visible', 'false');
-                      var_scene3_5.setAttribute('visible', 'false');
-                      var_box2.setAttribute('visible', 'false');
-                      var_box3.setAttribute('visible', 'false');
-                      var_box4.setAttribute('visible', 'false');
-                      var_box5.setAttribute('visible', 'false');
-                      var_text1.setAttribute('value', '');
-                      var_text2.setAttribute('value', '');
-                      var_text3.setAttribute('value', '');
-                      var_text4.setAttribute('value', '');
-                      var_text5.setAttribute('value', '');
-                      var_back.setAttribute('visible', 'false');
-                      var_thankyou.setAttribute('visible', 'true');
-                  });
-              }
-          });
-      </script>
+		  AFRAME.registerComponent('box0listner', {
+		  init: function () {
+		  var var_text1 = document.getElementById("id_text1");
+		  var var_text2 = document.getElementById("id_text2");
+		  var var_text3 = document.getElementById("id_text3");
+		  var var_text4 = document.getElementById("id_text4");
+		  var var_text5 = document.getElementById("id_text5");
+		  var var_box1 = document.getElementById("ent_box1");
+		  var var_box2 = document.getElementById("ent_box2");
+		  var var_box3 = document.getElementById("ent_box3");
+		  var var_box4 = document.getElementById("ent_box4");
+		  var var_box5 = document.getElementById("ent_box5");
+		  var vid = document.getElementById('ent_vid');
+		  var var_back = document.getElementById('back');
+		  var var_scene3_0 = document.getElementById("ent_scene3_0");
+		  var var_complete = document.getElementById("complete");
+		  var var_aud = document.getElementById("aud");
+		  this.el.addEventListener('mouseenter', function (evt) {
+		  var_text1.setAttribute('visible', 'true');
+		  });
+		  this.el.addEventListener('mouseleave', function (evt) {
+		  var_text1.setAttribute('visible', 'false');
+		  });
+		  this.el.addEventListener('click', function (evt) {
+		  var_scene3_0.setAttribute('visible', 'true');
+		  var_back.setAttribute('visible', 'true');
+		  vid.setAttribute('visible', 'false');
+		  var_box1.setAttribute('visible', 'false');
+		  var_box2.setAttribute('visible', 'false');
+		  var_box3.setAttribute('visible', 'false');
+		  var_box4.setAttribute('visible', 'false');
+		  var_box5.setAttribute('visible', 'false');
+		  this.setAttribute('visible', 'false');
+		  var_text1.setAttribute('value', '');
+		  var_text2.setAttribute('value', '');
+		  var_text3.setAttribute('value', '');
+		  var_text4.setAttribute('value', '');
+		  var_text5.setAttribute('value', '');
+		  var_back.setAttribute('visible', 'true');
+		  vid.setAttribute('visible', 'false');
+		  var_complete.setAttribute('visible', 'false');
+		  var_aud.setAttribute('src', 'audio/SGOverview.m4a');
+		  var_aud.play()
+		  });
+		  }
+		  });
+		  AFRAME.registerComponent('box1listner', {
+		  init: function () {
+		  var var_text1 = document.getElementById("id_text1");
+		  var var_text2 = document.getElementById("id_text2");
+		  var var_text3 = document.getElementById("id_text3");
+		  var var_text4 = document.getElementById("id_text4");
+		  var var_text5 = document.getElementById("id_text5");
+		  var var_box0 = document.getElementById("ent_box0");
+		  var var_box2 = document.getElementById("ent_box2");
+		  var var_box3 = document.getElementById("ent_box3");
+		  var var_box4 = document.getElementById("ent_box4");
+		  var var_box5 = document.getElementById("ent_box5");
+		  var vid = document.getElementById('ent_vid');
+		  var var_back = document.getElementById('back');
+		  var var_scene3_1 = document.getElementById("ent_scene3_1");
+		  var var_complete = document.getElementById("complete");
+		  var var_aud = document.getElementById("aud");
+		  this.el.addEventListener('mouseenter', function (evt) {
+		  var_text1.setAttribute('visible', 'true');
+		  });
+		  this.el.addEventListener('mouseleave', function (evt) {
+		  var_text1.setAttribute('visible', 'false');
+		  });
+		  this.el.addEventListener('click', function (evt) {
+		  var_scene3_1.setAttribute('visible', 'true');
+		  var_back.setAttribute('visible', 'true');
+		  vid.setAttribute('visible', 'false');
+		  var_box0.setAttribute('visible', 'false');
+		  var_box2.setAttribute('visible', 'false');
+		  var_box3.setAttribute('visible', 'false');
+		  var_box4.setAttribute('visible', 'false');
+		  var_box5.setAttribute('visible', 'false');
+		  this.setAttribute('visible', 'false');
+		  var_text1.setAttribute('value', '');
+		  var_text2.setAttribute('value', '');
+		  var_text3.setAttribute('value', '');
+		  var_text4.setAttribute('value', '');
+		  var_text5.setAttribute('value', '');
+		  var_back.setAttribute('visible', 'true');
+		  vid.setAttribute('visible', 'false');
+		  var_complete.setAttribute('visible', 'false');
+		  var_aud.setAttribute('src', 'audio/investmentSolutions.m4a');
+		  var_aud.play()
+		  });
+		  }
+		  });
+		  AFRAME.registerComponent('box2listner', {
+		  init: function () {
+		  var var_scene3_2 = document.getElementById("ent_scene3_2");
+		  var vid = document.getElementById('ent_vid');
+		  var var_back = document.getElementById('back');
+		  var var_text1 = document.getElementById("id_text1");
+		  var var_text2 = document.getElementById("id_text2");
+		  var var_text3 = document.getElementById("id_text3");
+		  var var_text4 = document.getElementById("id_text4");
+		  var var_text5 = document.getElementById("id_text5");
+		  var var_box0 = document.getElementById("ent_box0");
+		  var var_box1 = document.getElementById("ent_box1");
+		  var var_box3 = document.getElementById("ent_box3");
+		  var var_box4 = document.getElementById("ent_box4");
+		  var var_box5 = document.getElementById("ent_box5");
+		  var var_complete = document.getElementById("complete");
+		  var var_aud = document.getElementById("aud");
+		  this.el.addEventListener('mouseenter', function (evt) {
+		  var_text2.setAttribute('visible', 'true');
+		  });
+		  this.el.addEventListener('mouseleave', function (evt) {
+		  var_text2.setAttribute('visible', 'false');
+		  });
+		  this.el.addEventListener('click', function (evt) {
+		  var_scene3_2.setAttribute('visible', 'true');
+		  var_back.setAttribute('visible', 'true');
+		  var_back.setAttribute('position', '0 -18 -30');
+		  vid.setAttribute('visible', 'false');
+		  var_box0.setAttribute('visible', 'false');
+		  var_box1.setAttribute('visible', 'false');
+		  var_box3.setAttribute('visible', 'false');
+		  var_box4.setAttribute('visible', 'false');
+		  var_box5.setAttribute('visible', 'false');
+		  var_text1.setAttribute('value', '');
+		  var_text2.setAttribute('value', '');
+		  var_text3.setAttribute('value', '');
+		  var_text4.setAttribute('value', '');
+		  var_text5.setAttribute('value', '');
+		  this.setAttribute('visible', 'false');
+		  var_complete.setAttribute('visible', 'false');
+		  var_aud.setAttribute('src', 'audio/wealthplanning.m4a');
+		  var_aud.play()
+		  });
+		  }
+		  });
+		  AFRAME.registerComponent('box3listner', {
+		  init: function () {
+		  var var_text1 = document.getElementById("id_text1");
+		  var var_text2 = document.getElementById("id_text2");
+		  var var_text3 = document.getElementById("id_text3");
+		  var var_text4 = document.getElementById("id_text4");
+		  var var_text5 = document.getElementById("id_text5");
+		  var var_box0 = document.getElementById("ent_box0");
+		  var var_box2 = document.getElementById("ent_box2");
+		  var var_box1 = document.getElementById("ent_box1");
+		  var var_box4 = document.getElementById("ent_box4");
+		  var var_box5 = document.getElementById("ent_box5");
+		  var vid = document.getElementById('ent_vid');
+		  var var_back = document.getElementById('back');
+		  var var_scene3_3 = document.getElementById("ent_scene3_3");
+		  var var_complete = document.getElementById("complete");
+		  var var_aud = document.getElementById("aud");
+		  this.el.addEventListener('mouseenter', function (evt) {
+		  var_text3.setAttribute('visible', 'true');
+		  });
+		  this.el.addEventListener('mouseleave', function (evt) {
+		  var_text3.setAttribute('visible', 'false');
+		  });
+		  this.el.addEventListener('click', function (evt) {
+		  var_scene3_3.setAttribute('visible', 'true');
+		  var_back.setAttribute('visible', 'true');
+		  var_back.setAttribute('position', '0 -18 -30');
+		  vid.setAttribute('visible', 'false');
+		  var_box0.setAttribute('visible', 'false');
+		  var_box2.setAttribute('visible', 'false');
+		  var_box1.setAttribute('visible', 'false');
+		  var_box4.setAttribute('visible', 'false');
+		  var_box5.setAttribute('visible', 'false');
+		  this.setAttribute('visible', 'false');
+		  var_text1.setAttribute('value', '');
+		  var_text2.setAttribute('value', '');
+		  var_text3.setAttribute('value', '');
+		  var_text4.setAttribute('value', '');
+		  var_text5.setAttribute('value', '');
+		  var_back.setAttribute('visible', 'true');
+		  vid.setAttribute('visible', 'false');
+		  var_complete.setAttribute('visible', 'false');
+		  var_aud.setAttribute('src', 'audio/artAndPhilanthrophy.m4a');
+		  var_aud.play()
+		  });
+		  }
+		  });
+		  AFRAME.registerComponent('box4listner', {
+		  init: function () {
+		  var var_text1 = document.getElementById("id_text1");
+		  var var_text2 = document.getElementById("id_text2");
+		  var var_text3 = document.getElementById("id_text3");
+		  var var_text4 = document.getElementById("id_text4");
+		  var var_text5 = document.getElementById("id_text5");
+		  var var_box0 = document.getElementById("ent_box0");
+		  var var_box2 = document.getElementById("ent_box2");
+		  var var_box3 = document.getElementById("ent_box3");
+		  var var_box4 = document.getElementById("ent_box4");
+		  var var_box5 = document.getElementById("ent_box5");
+		  var vid = document.getElementById('ent_vid');
+		  var var_back = document.getElementById('back');
+		  var var_scene3_4 = document.getElementById("ent_scene3_4");
+		  var var_complete = document.getElementById("complete");
+		  var var_aud = document.getElementById("aud");
+		  this.el.addEventListener('mouseenter', function (evt) {
+		  var_text4.setAttribute('visible', 'true');
+		  });
+		  this.el.addEventListener('mouseleave', function (evt) {
+		  var_text4.setAttribute('visible', 'false');
+		  });
+		  this.el.addEventListener('click', function (evt) {
+		  var_scene3_4.setAttribute('visible', 'true');
+		  var_back.setAttribute('visible', 'true');
+		  vid.setAttribute('visible', 'false');
+		  var_box0.setAttribute('visible', 'false');
+		  var_box2.setAttribute('visible', 'false');
+		  var_box1.setAttribute('visible', 'false');
+		  var_box3.setAttribute('visible', 'false');
+		  var_box5.setAttribute('visible', 'false');
+		  this.setAttribute('visible', 'false');
+		  var_text1.setAttribute('value', '');
+		  var_text2.setAttribute('value', '');
+		  var_text3.setAttribute('value', '');
+		  var_text4.setAttribute('value', '');
+		  var_text5.setAttribute('value', '');
+		  var_back.setAttribute('visible', 'true');
+		  vid.setAttribute('visible', 'false');
+		  var_complete.setAttribute('visible', 'false');
+		  var_aud.setAttribute('src', 'audio/corporateSolutions.m4a');
+		  var_aud.play()
+		  });
+		  }
+		  });
+		  AFRAME.registerComponent('box5listner', {
+		  init: function () {
+		  var var_text1 = document.getElementById("id_text1");
+		  var var_text2 = document.getElementById("id_text2");
+		  var var_text3 = document.getElementById("id_text3");
+		  var var_text4 = document.getElementById("id_text4");
+		  var var_text5 = document.getElementById("id_text5");
+		  var var_box0 = document.getElementById("ent_box0");
+		  var var_box2 = document.getElementById("ent_box2");
+		  var var_box3 = document.getElementById("ent_box3");
+		  var var_box4 = document.getElementById("ent_box4");
+		  var var_box1 = document.getElementById("ent_box1");
+		  var vid = document.getElementById('ent_vid');
+		  var var_back = document.getElementById('back');
+		  var var_scene3_5 = document.getElementById("ent_scene3_5");
+		  var var_complete = document.getElementById("complete");
+		  var var_aud = document.getElementById("aud");
+		  this.el.addEventListener('mouseenter', function (evt) {
+		  var_text5.setAttribute('visible', 'true');
+		  });
+		  this.el.addEventListener('mouseleave', function (evt) {
+		  var_text5.setAttribute('visible', 'false');
+		  });
+		  this.el.addEventListener('click', function (evt) {
+		  var_scene3_5.setAttribute('visible', 'true');
+		  var_back.setAttribute('visible', 'true');
+		  var_back.setAttribute('position', '0 -18 -30');
+		  vid.setAttribute('visible', 'false');
+		  var_box0.setAttribute('visible', 'false');
+		  var_box2.setAttribute('visible', 'false');
+		  var_box1.setAttribute('visible', 'false');
+		  var_box4.setAttribute('visible', 'false');
+		  var_box3.setAttribute('visible', 'false');
+		  this.setAttribute('visible', 'false');
+		  var_text1.setAttribute('value', '');
+		  var_text2.setAttribute('value', '');
+		  var_text3.setAttribute('value', '');
+		  var_text4.setAttribute('value', '');
+		  var_text5.setAttribute('value', '');
+		  var_back.setAttribute('visible', 'true');
+		  vid.setAttribute('visible', 'false');
+		  var_complete.setAttribute('visible', 'false');
+		  var_aud.setAttribute('src', 'audio/financing.m4a');
+		  var_aud.play()
+		  });
+		  }
+		  });
+		  AFRAME.registerComponent('control-goback', {
+		  init: function () {
+		  var vid = document.getElementById('ent_vid');
+		  var var_scene3_0 = document.getElementById("ent_scene3_0");
+		  var var_scene3_1 = document.getElementById("ent_scene3_1");
+		  var var_scene3_2 = document.getElementById("ent_scene3_2");
+		  var var_scene3_3 = document.getElementById("ent_scene3_3");
+		  var var_scene3_4 = document.getElementById("ent_scene3_4");
+		  var var_scene3_5 = document.getElementById("ent_scene3_5");
+		  var var_box0 = document.getElementById("ent_box0");
+		  var var_box1 = document.getElementById("ent_box1");
+		  var var_box2 = document.getElementById("ent_box2");
+		  var var_box3 = document.getElementById("ent_box3");
+		  var var_box4 = document.getElementById("ent_box4");
+		  var var_box5 = document.getElementById("ent_box5");
+		  var var_text1 = document.getElementById("id_text1");
+		  var var_text2 = document.getElementById("id_text2");
+		  var var_text3 = document.getElementById("id_text3");
+		  var var_text4 = document.getElementById("id_text4");
+		  var var_text5 = document.getElementById("id_text5");
+		  var var_complete = document.getElementById("complete");
+		  var var_aud = document.getElementById("aud");
+		  this.el.addEventListener('click', function (evt) {
+		  this.setAttribute('visible', 'false');
+		  var_box0.setAttribute('visible', 'true');
+		  var_box1.setAttribute('visible', 'true');
+		  vid.setAttribute('visible', 'true');
+		  var_scene3_0.setAttribute('visible', 'false');
+		  var_scene3_1.setAttribute('visible', 'false');
+		  var_scene3_2.setAttribute('visible', 'false');
+		  var_scene3_3.setAttribute('visible', 'false');
+		  var_scene3_4.setAttribute('visible', 'false');
+		  var_scene3_5.setAttribute('visible', 'false');
+		  var_box2.setAttribute('visible', 'true');
+		  var_box3.setAttribute('visible', 'true');
+		  var_box4.setAttribute('visible', 'true');
+		  var_box5.setAttribute('visible', 'true');
+		  var_text1.setAttribute('value', '1. Managed\n2. Adversory\n3. Execution');
+		  var_text2.setAttribute('value', '1. Products Offerings\n2. Service Offerings');
+		  var_text3.setAttribute('value', '1. Art Advisory\n2. Philanthropy');
+		  var_text4.setAttribute('value', '1. Strategic Option\n2. Investment Opportunities\n3. Assets accepted as security\n4. Flexibility Of  Theme');
+		  var_text5.setAttribute('value', '1. Line1\n2. Line 2');
+		  var_complete.setAttribute('visible', 'true');
+		  var_aud.setAttribute('src', '');
+		  });
+		  }
+		  });
+		  AFRAME.registerComponent('control-complete', {
+		  init: function () {
+		  var vid = document.getElementById('ent_vid');
+		  var var_scene3_0 = document.getElementById("ent_scene3_0");
+		  var var_scene3_1 = document.getElementById("ent_scene3_1");
+		  var var_scene3_2 = document.getElementById("ent_scene3_2");
+		  var var_scene3_3 = document.getElementById("ent_scene3_3");
+		  var var_scene3_4 = document.getElementById("ent_scene3_4");
+		  var var_scene3_5 = document.getElementById("ent_scene3_5");
+		  var var_box0 = document.getElementById("ent_box0");
+		  var var_box1 = document.getElementById("ent_box1");
+		  var var_box2 = document.getElementById("ent_box2");
+		  var var_box3 = document.getElementById("ent_box3");
+		  var var_box4 = document.getElementById("ent_box4");
+		  var var_box5 = document.getElementById("ent_box5");
+		  var var_text1 = document.getElementById("id_text1");
+		  var var_text2 = document.getElementById("id_text2");
+		  var var_text3 = document.getElementById("id_text3");
+		  var var_text4 = document.getElementById("id_text4");
+		  var var_text5 = document.getElementById("id_text5");
+		  var var_back = document.getElementById("back");
+		  var var_thankyou = document.getElementById("ent_thankyou");
+		  var var_aud = document.getElementById("aud");
+		  this.el.addEventListener('click', function (evt) {
+		  this.setAttribute('visible', 'false');
+		  var_box0.setAttribute('visible', 'false');
+		  var_box1.setAttribute('visible', 'false');
+		  vid.setAttribute('visible', 'false');
+		  var_scene3_0.setAttribute('visible', 'false');
+		  var_scene3_1.setAttribute('visible', 'false');
+		  var_scene3_2.setAttribute('visible', 'false');
+		  var_scene3_3.setAttribute('visible', 'false');
+		  var_scene3_4.setAttribute('visible', 'false');
+		  var_scene3_5.setAttribute('visible', 'false');
+		  var_box2.setAttribute('visible', 'false');
+		  var_box3.setAttribute('visible', 'false');
+		  var_box4.setAttribute('visible', 'false');
+		  var_box5.setAttribute('visible', 'false');
+		  var_text1.setAttribute('value', '');
+		  var_text2.setAttribute('value', '');
+		  var_text3.setAttribute('value', '');
+		  var_text4.setAttribute('value', '');
+		  var_text5.setAttribute('value', '');
+		  var_back.setAttribute('visible', 'false');
+		  var_thankyou.setAttribute('visible', 'true');
+		  var_aud.setAttribute('src', 'audio/endline.m4a');
+		  var_aud.play()
+		  });
+		  }
+		  });
+	  </script>
       <a-scene>
       <a-assets>
             <script id="box0" type="text/x-nunjucks-template">
                 <img id="boxtexture0" src="img/aboutSG.png" crossOrigin="anonymous">
-                <a-box src="#boxtexture0" position="0 75 -90" rotation="40 0 0" geometry="height:50;width:80"</a-box>
+                <a-box src="#boxtexture0" position="0 75 -90" rotation="40 0 0" geometry="height:60;width:100"</a-box>
                 </script>
           <script id="box1" type="text/x-nunjucks-template">
             <img id="boxtexture1" src="img/texture_is.png" crossOrigin="anonymous">
@@ -411,14 +432,14 @@
             </a-box>
             </script>
             <script id="scene3_0" type="text/x-nunjucks-template">      
-                <a-image src="img\AboutSG\sgpb2.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
-                <a-image src="img\AboutSG\sggroup1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
-                <a-image src="img\AboutSG\3steps.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>     
-                <a-image src="img\AboutSG\sglux4.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
-                        <a-animation attribute="position" from="-60 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
+                <a-image src="img\AboutSG\sggroup1.png" position="14 13 -25" scale="15 15 15" rotation="0 -15 0" width="2" height="1.5">
+                    <a-animation attribute="position" from="14 15 -25" to="14 5 -25" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
+                <a-image src="img\AboutSG\sgpb2.png" position="-14 5 -25" scale="15 15 15" rotation="0 15 0" width="2" height="1.5">
+                    <a-animation attribute="position" from="-14 15 -25" to="-14 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
+                <a-image src="img\AboutSG\3steps.png" position="25 5 0" scale="15 15 15" rotation="0 -90 0" width="2" height="1.5">
+                    <a-animation attribute="position" from="25 15 0" to="25 5 0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>     
+                <a-image src="img\AboutSG\sglux4.png" position="-30 5 0" scale="15 15 15" rotation="0 90 0" width="2" height="1.5">
+                    <a-animation attribute="position" from="-30 15 0" to="-30 5 -0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
                 <a-sky color="#E6E6FA"></a-sky>
             </script>
             <script id="scene3_1" type="text/x-nunjucks-template">      
@@ -441,7 +462,7 @@
                 <a-sky color="#808080"></a-sky>
             </script>
             <script id="scene3_4" type="text/x-nunjucks-template">
-                <a-image src="img\corporateSolutions\corporate solutions.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                <a-image src="img\CorporateSolutions\corporateSolutions.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image>
                 <a-sky color="#DB7093"></a-sky>
             </script>
@@ -535,58 +556,61 @@
       visible="true"
       rotation="0 -50 0">
     </a-video>  
-    <audio id="opening" src="audio/audio1.mp3"></a-audio> 
+	<audio id="aud" src=""></audio>
     
     </a-scene>
     <script type="text/javascript">
-        var vid = document.getElementById('vid');
-        var var_box0 = document.getElementById("ent_box0");
-        var var_box1 = document.getElementById("ent_box1");
-        var var_box2 = document.getElementById("ent_box2");
-        var var_box3 = document.getElementById("ent_box3");
-        var var_box4 = document.getElementById("ent_box4");
-        var var_box5 = document.getElementById("ent_box5");
-        var var_text1 = document.getElementById("id_text1");
-        var var_text2 = document.getElementById("id_text2");
-        var var_text3 = document.getElementById("id_text3");
-        var var_text4 = document.getElementById("id_text4");
-        var var_text5 = document.getElementById("id_text5");
-        var var_logo = document.getElementById("logo");
-        var var_TN = document.getElementById("TN");
-        var var_complete = document.getElementById("complete");
-        var dealy = 28000;
-        vid.play();
-        setTimeout(function () {
-            vid.setAttribute('src', 'video/video1.mp4');
-            vid.play();
-            var_logo.setAttribute('visible', 'false');
-            var_TN.setAttribute('visible', 'false');
-        }, dealy);
-        setTimeout(function () {
-            var_box1.setAttribute('visible', 'true');
-            var_text1.setAttribute('value', '1. Managed\n2. Adversory\n3. Execution');
-            var_box3.setAttribute('visible', 'true');
-            var_text3.setAttribute('value', '1. Art Advisory\n2. Philanthropy');
-        }, dealy + 2);
-        setTimeout(function () {
-            var_box4.setAttribute('visible', 'true');
-            var_text4.setAttribute('value', '1. Strategic Option\n2. Investment Opportunities\n3. Assets accepted as security\n4. Flexibility Of  Theme');
-            var_box5.setAttribute('visible', 'true');
-            var_text5.setAttribute('value', '1. Line1\n2. Line 2');
-        }, dealy + 4);
-        setTimeout(function () {
-            var_box2.setAttribute('visible', 'true');
-            var_box0.setAttribute('visible', 'true');
-            var_text2.setAttribute('value', '1. Products Offerings\n2. Service Offerings');
-            var_complete.setAttribute('visible', 'true');
-        }, dealy + 6);
-    </script>
-    <script type="text/javascript">
-        var ent_aud = document.getElementById('opening');
-        setTimeout(function () {
-            ent_aud.play()
-        }, dealy + 3);
-    </script>
+		var vid = document.getElementById('vid');
+		var var_box0 = document.getElementById("ent_box0");
+		var var_box1 = document.getElementById("ent_box1");
+		var var_box2 = document.getElementById("ent_box2");
+		var var_box3 = document.getElementById("ent_box3");
+		var var_box4 = document.getElementById("ent_box4");
+		var var_box5 = document.getElementById("ent_box5");
+		var var_text1 = document.getElementById("id_text1");
+		var var_text2 = document.getElementById("id_text2");
+		var var_text3 = document.getElementById("id_text3");
+		var var_text4 = document.getElementById("id_text4");
+		var var_text5 = document.getElementById("id_text5");
+		var var_logo = document.getElementById("logo");
+		var var_TN = document.getElementById("TN");
+		var var_complete = document.getElementById("complete");
+		var ent_aud = document.getElementById('aud');
+		var dealy = 48000;
+		setTimeout(function () {
+		ent_aud.setAttribute('src', 'audio/introduction.m4a');
+		ent_aud.play()
+		}, 3000);
+		setTimeout(function () {
+		vid.play();
+		}, 27000);
+		setTimeout(function () {
+		vid.setAttribute('src', 'video/video1.mp4');
+		vid.play();
+		var_logo.setAttribute('visible', 'false');
+		var_TN.setAttribute('visible', 'false');
+		}, dealy);
+		setTimeout(function () {
+		var_box1.setAttribute('visible', 'true');
+		var_text1.setAttribute('value', '1. Managed\n2. Adversory\n3. Execution');
+		var_box3.setAttribute('visible', 'true');
+		var_text3.setAttribute('value', '1. Art Advisory\n2. Philanthropy');
+		}, dealy + 1000);
+		setTimeout(function () {
+		var_box4.setAttribute('visible', 'true');
+		var_text4.setAttribute('value', '1. Strategic Option\n2. Investment Opportunities\n3. Assets accepted as security\n4. Flexibility Of  Theme');
+		var_box5.setAttribute('visible', 'true');
+		var_text5.setAttribute('value', '1. Line1\n2. Line 2');
+		}, dealy + 2000);
+		setTimeout(function () {
+		var_box2.setAttribute('visible', 'true');
+		var_box0.setAttribute('visible', 'true');
+		var_text2.setAttribute('value', '1. Products Offerings\n2. Service Offerings');
+		var_complete.setAttribute('visible', 'true');
+		ent_aud.setAttribute('src', 'audio/insidewaterguide.m4a');
+		ent_aud.play()
+		}, dealy + 3000);
+	</script>
     <!--  box1 right last
           box5 right middle
           box2 middle

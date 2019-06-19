@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <head>
     <title>Cognitive Squad Scene</title>
-    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script> 
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script> 
     <script src="https://unpkg.com/aframe-template-component@^3.1.1/dist/aframe-template-component.min.js"></script> 
     <script src="https://unpkg.com/aframe-multi-video-component/dist/aframe-multi-video-component.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
@@ -10,6 +10,49 @@
 
   <body>
       <script type="text/javascript">
+      AFRAME.registerComponent('box0listner', {
+              init: function () {
+                  var var_text1 = document.getElementById("id_text1");
+                  var var_text2 = document.getElementById("id_text2");
+                  var var_text3 = document.getElementById("id_text3");
+                  var var_text4 = document.getElementById("id_text4");
+                  var var_text5 = document.getElementById("id_text5");
+                  var var_box1 = document.getElementById("ent_box2");
+                  var var_box2 = document.getElementById("ent_box2");
+                  var var_box3 = document.getElementById("ent_box3");
+                  var var_box4 = document.getElementById("ent_box4");
+                  var var_box5 = document.getElementById("ent_box5");
+                  var vid = document.getElementById('ent_vid');
+                  var var_back = document.getElementById('back');
+                  var var_scene3_0 = document.getElementById("ent_scene3_0");
+                  var var_complete = document.getElementById("complete");
+                  this.el.addEventListener('mouseenter', function (evt) {
+                      var_text1.setAttribute('visible', 'true');
+                  });
+                  this.el.addEventListener('mouseleave', function (evt) {
+                      var_text1.setAttribute('visible', 'false');
+                  });
+                  this.el.addEventListener('click', function (evt) {
+                      var_scene3_0.setAttribute('visible', 'true');
+                      var_back.setAttribute('visible', 'true');
+                      vid.setAttribute('visible', 'false');
+                      var_box1.setAttribute('visible', 'false');
+                      var_box2.setAttribute('visible', 'false');
+                      var_box3.setAttribute('visible', 'false');
+                      var_box4.setAttribute('visible', 'false');
+                      var_box5.setAttribute('visible', 'false');
+                      this.setAttribute('visible', 'false');
+                      var_text1.setAttribute('value', '');
+                      var_text2.setAttribute('value', '');
+                      var_text3.setAttribute('value', '');
+                      var_text4.setAttribute('value', '');
+                      var_text5.setAttribute('value', '');
+                      var_back.setAttribute('visible', 'true');
+                      vid.setAttribute('visible', 'false');
+                      var_complete.setAttribute('visible', 'false');
+                  });
+              }
+          });
           AFRAME.registerComponent('box1listner', {
               init: function () {
                   var var_text1 = document.getElementById("id_text1");
@@ -17,6 +60,7 @@
                   var var_text3 = document.getElementById("id_text3");
                   var var_text4 = document.getElementById("id_text4");
                   var var_text5 = document.getElementById("id_text5");
+                  var var_box0 = document.getElementById("ent_box0");
                   var var_box2 = document.getElementById("ent_box2");
                   var var_box3 = document.getElementById("ent_box3");
                   var var_box4 = document.getElementById("ent_box4");
@@ -35,6 +79,7 @@
                       var_scene3_1.setAttribute('visible', 'true');
                       var_back.setAttribute('visible', 'true');
                       vid.setAttribute('visible', 'false');
+                      var_box0.setAttribute('visible', 'false');
                       var_box2.setAttribute('visible', 'false');
                       var_box3.setAttribute('visible', 'false');
                       var_box4.setAttribute('visible', 'false');
@@ -61,6 +106,7 @@
                   var var_text3 = document.getElementById("id_text3");
                   var var_text4 = document.getElementById("id_text4");
                   var var_text5 = document.getElementById("id_text5");
+                  var var_box0 = document.getElementById("ent_box0");
                   var var_box1 = document.getElementById("ent_box1");
                   var var_box3 = document.getElementById("ent_box3");
                   var var_box4 = document.getElementById("ent_box4");
@@ -77,6 +123,7 @@
                       var_back.setAttribute('visible', 'true');
                       var_back.setAttribute('position', '0 -18 -30');
                       vid.setAttribute('visible', 'false');
+                      var_box0.setAttribute('visible', 'false');
                       var_box1.setAttribute('visible', 'false');
                       var_box3.setAttribute('visible', 'false');
                       var_box4.setAttribute('visible', 'false');
@@ -99,8 +146,9 @@
                   var var_text3 = document.getElementById("id_text3");
                   var var_text4 = document.getElementById("id_text4");
                   var var_text5 = document.getElementById("id_text5");
+                  var var_box0 = document.getElementById("ent_box0");
                   var var_box2 = document.getElementById("ent_box2");
-                  var var_box3 = document.getElementById("ent_box3");
+                  var var_box1 = document.getElementById("ent_box1");
                   var var_box4 = document.getElementById("ent_box4");
                   var var_box5 = document.getElementById("ent_box5");
                   var vid = document.getElementById('ent_vid');
@@ -118,6 +166,7 @@
                       var_back.setAttribute('visible', 'true');
                       var_back.setAttribute('position', '0 -18 -30');
                       vid.setAttribute('visible', 'false');
+                      var_box0.setAttribute('visible', 'false');
                       var_box2.setAttribute('visible', 'false');
                       var_box1.setAttribute('visible', 'false');
                       var_box4.setAttribute('visible', 'false');
@@ -141,6 +190,7 @@
                   var var_text3 = document.getElementById("id_text3");
                   var var_text4 = document.getElementById("id_text4");
                   var var_text5 = document.getElementById("id_text5");
+                  var var_box0 = document.getElementById("ent_box0");
                   var var_box2 = document.getElementById("ent_box2");
                   var var_box3 = document.getElementById("ent_box3");
                   var var_box4 = document.getElementById("ent_box4");
@@ -160,6 +210,7 @@
                       var_back.setAttribute('visible', 'true');
                       var_back.setAttribute('position', '0 -18 -30');
                       vid.setAttribute('visible', 'false');
+                      var_box0.setAttribute('visible', 'false');
                       var_box2.setAttribute('visible', 'false');
                       var_box1.setAttribute('visible', 'false');
                       var_box3.setAttribute('visible', 'false');
@@ -183,10 +234,11 @@
                   var var_text3 = document.getElementById("id_text3");
                   var var_text4 = document.getElementById("id_text4");
                   var var_text5 = document.getElementById("id_text5");
+                  var var_box0 = document.getElementById("ent_box0");
                   var var_box2 = document.getElementById("ent_box2");
                   var var_box3 = document.getElementById("ent_box3");
                   var var_box4 = document.getElementById("ent_box4");
-                  var var_box5 = document.getElementById("ent_box5");
+                  var var_box1 = document.getElementById("ent_box1");
                   var vid = document.getElementById('ent_vid');
                   var var_back = document.getElementById('back');
                   var var_scene3_5 = document.getElementById("ent_scene3_5");
@@ -202,6 +254,7 @@
                       var_back.setAttribute('visible', 'true');
                       var_back.setAttribute('position', '0 -18 -30');
                       vid.setAttribute('visible', 'false');
+                      var_box0.setAttribute('visible', 'false');
                       var_box2.setAttribute('visible', 'false');
                       var_box1.setAttribute('visible', 'false');
                       var_box4.setAttribute('visible', 'false');
@@ -221,11 +274,13 @@
           AFRAME.registerComponent('control-goback', {
               init: function () {
                   var vid = document.getElementById('ent_vid');
+                  var var_scene3_0 = document.getElementById("ent_scene3_0");
                   var var_scene3_1 = document.getElementById("ent_scene3_1");
                   var var_scene3_2 = document.getElementById("ent_scene3_2");
                   var var_scene3_3 = document.getElementById("ent_scene3_3");
                   var var_scene3_4 = document.getElementById("ent_scene3_4");
                   var var_scene3_5 = document.getElementById("ent_scene3_5");
+                  var var_box0 = document.getElementById("ent_box0");
                   var var_box1 = document.getElementById("ent_box1");
                   var var_box2 = document.getElementById("ent_box2");
                   var var_box3 = document.getElementById("ent_box3");
@@ -239,8 +294,10 @@
                   var var_complete = document.getElementById("complete");
                   this.el.addEventListener('click', function (evt) {
                       this.setAttribute('visible', 'false');
+                      var_box0.setAttribute('visible', 'true');
                       var_box1.setAttribute('visible', 'true');
                       vid.setAttribute('visible', 'true');
+                      var_scene3_0.setAttribute('visible', 'false');
                       var_scene3_1.setAttribute('visible', 'false');
                       var_scene3_2.setAttribute('visible', 'false');
                       var_scene3_3.setAttribute('visible', 'false');
@@ -262,11 +319,13 @@
           AFRAME.registerComponent('control-complete', {
               init: function () {
                   var vid = document.getElementById('ent_vid');
+                  var var_scene3_0 = document.getElementById("ent_scene3_0");
                   var var_scene3_1 = document.getElementById("ent_scene3_1");
                   var var_scene3_2 = document.getElementById("ent_scene3_2");
                   var var_scene3_3 = document.getElementById("ent_scene3_3");
                   var var_scene3_4 = document.getElementById("ent_scene3_4");
                   var var_scene3_5 = document.getElementById("ent_scene3_5");
+                  var var_box0 = document.getElementById("ent_box0");
                   var var_box1 = document.getElementById("ent_box1");
                   var var_box2 = document.getElementById("ent_box2");
                   var var_box3 = document.getElementById("ent_box3");
@@ -281,8 +340,10 @@
                   var var_thankyou = document.getElementById("ent_thankyou");
                   this.el.addEventListener('click', function (evt) {
                       this.setAttribute('visible', 'false');
+                      var_box0.setAttribute('visible', 'false');
                       var_box1.setAttribute('visible', 'false');
                       vid.setAttribute('visible', 'false');
+                      var_scene3_0.setAttribute('visible', 'false');
                       var_scene3_1.setAttribute('visible', 'false');
                       var_scene3_2.setAttribute('visible', 'false');
                       var_scene3_3.setAttribute('visible', 'false');
@@ -305,6 +366,10 @@
       </script>
       <a-scene>
       <a-assets>
+            <script id="box0" type="text/x-nunjucks-template">
+                <img id="boxtexture0" src="img/aboutSG.png" crossOrigin="anonymous">
+                <a-box src="#boxtexture0" position="0 60 -90" rotation="40 0 0" geometry="height:50;width:80"</a-box>
+                </script>
           <script id="box1" type="text/x-nunjucks-template">
             <img id="boxtexture1" src="img/texture_is.png" crossOrigin="anonymous">
             <a-box src="#boxtexture1" position="30 1.5 0" scale="6 6 6" rotation="150 50 150" radius="1.25" color="#00FFFF" 
@@ -345,49 +410,46 @@
               <a-animation attribute="rotation" from="20 0 0" to="20 360 20" direction="alternate" dur="8000" repeat="indefinite"></a-animation>
             </a-box>
             </script>
+            <script id="scene3_0" type="text/x-nunjucks-template">      
+                <a-image src="img\wealthPlanning\image1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
+                <a-image src="img\wealthPlanning\image1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
+                <a-image src="img\wealthPlanning\image1.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
+                <a-sky color="#E6E6FA"></a-sky>
+            </script>
             <script id="scene3_1" type="text/x-nunjucks-template">      
-                <a-image src="img\wealthPlanning\image1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="0 35 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
-                <a-image src="img\wealthPlanning\image1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="-30 35 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
-                <a-image src="img\wealthPlanning\image1.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="30 35 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
+                <a-image src="img\InvestmentSolutions\invs1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
+                <a-image src="img\InvestmentSolutions\invs2.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
+                <a-image src="img\InvestmentSolutions\invs3.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
                 <a-sky color="#E6E6FA"></a-sky>
             </script>
             <script id="scene3_2" type="text/x-nunjucks-template">  
-                <a-image src="img\wealthPlanning\image1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="0 35 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
-                <a-image src="img\wealthPlanning\image1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="-30 35 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
-                <a-image src="img\wealthPlanning\image1.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="30 35 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>           
-                <a-sky color="green"></a-sky>
+                <a-image src="img\wealthPlanning\wealthplanning.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image> 
+                <a-sky src="img\CaveImg.png"></a-sky>
             </script>
             <script id="scene3_3" type="text/x-nunjucks-template">       
-                <a-image src="img\wealthPlanning\image1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="0 35 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
-                <a-image src="img\wealthPlanning\image1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="-30 35 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
-                <a-image src="img\wealthPlanning\image1.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="30 35 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
+                <a-image src="img\Art\art.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image>
                 <a-sky color="#808080"></a-sky>
             </script>
             <script id="scene3_4" type="text/x-nunjucks-template">
-                <a-image src="img\wealthPlanning\image1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="0 35 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
-                <a-image src="img\wealthPlanning\image1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="-30 35 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
-                <a-image src="img\wealthPlanning\image1.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="30 35 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>            
+                <a-image src="img\corporateSolutions\corporate solutions.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="0 15 -0" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image>
                 <a-sky color="#DB7093"></a-sky>
             </script>
             <script id="scene3_5" type="text/x-nunjucks-template">  
-                <a-image src="img\wealthPlanning\image1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="0 35 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
-                <a-image src="img\wealthPlanning\image1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="-30 35 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
-                <a-image src="img\wealthPlanning\image1.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="2" height="1.3">
-                    <a-animation attribute="position" from="30 35 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>           
+                <a-image src="img\finance\financ3.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
+                <a-image src="img\finance\financ1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
+                <a-image src="img\finance\financ2.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>           
                 <a-sky color="#00FA9A"></a-sky>
             </script>
             <script id="thankyou" type="text/x-nunjucks-template">  
@@ -421,6 +483,8 @@
     <a-box id="ent_box3" template='src: #box3' visible='false' box3listner></a-box>
     <a-box id="ent_box4" template='src: #box4' visible='false' box4listner></a-box>
     <a-box id="ent_box5" template='src: #box5' visible='false' box5listner></a-box>
+    <a-entity id="ent_box0"template='src: #box0' visible='false' box0listner></a-entity>
+    <a-entity id="ent_scene3_0"template='src: #scene3_0' visible='false' ></a-entity>
     <a-entity id="ent_scene3_1"template='src: #scene3_1' visible='false' ></a-entity>
     <a-entity id="ent_scene3_2"template='src: #scene3_2' visible='false' ></a-entity>
     <a-entity id="ent_scene3_3"template='src: #scene3_3' visible='false' ></a-entity>
@@ -456,10 +520,10 @@
     <a-box id="ent_text4" template='src: #text4' visible='false' text4listner></a-box>
     <a-box id="ent_text5" template='src: #text5' visible='false' text5listner></a-box>
     <a-entity id="ent_thankyou" template='src: #thankyou' visible='false' ></a-entity>
-    <a-image id ="logo" src="#SGLogo" position="30 18 -30" scale="15 15 15" rotation="0 0 0" width="0.8" height="0.40"></a-image> 
-    <a-image id ="TN" src="#TeamName" position="30 -18 -30" scale="15 15 15" rotation="0 0 0" width="1" height="0.30"></a-image> 
-    <a-image id="back" src="img/back_button.png" width="5" height="3" position="0 -18 -30" visible="false" control-goback></a-image>
-    <a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20" visible="false" control-complete></a-image>
+    <a-image id ="logo" src="#SGLogo" position="30 18 -30" scale="15 15 15" rotation="0 0 0" width="0.5" height="0.40"></a-image> 
+    <a-image id ="TN" src="#TeamName" position="30 -18 -30" scale="15 15 15" rotation="0 0 0" width="0.5" height="0.30"></a-image> 
+    <a-image id="back" src="img/back_button.png" width="6" height="3" position="0 -18 -30" rotation="-25 0 0" visible="false" control-goback></a-image>
+    <a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20" rotation="-25 0 0" visible="false" control-complete></a-image>
     <a-video id="ent_vid" geometry="primitive: sphere;
       radius: 5000;
       segmentsWidth: 64;
@@ -474,6 +538,7 @@
     </a-scene>
     <script type="text/javascript">
         var vid = document.getElementById('vid');
+        var var_box0 = document.getElementById("ent_box0");
         var var_box1 = document.getElementById("ent_box1");
         var var_box2 = document.getElementById("ent_box2");
         var var_box3 = document.getElementById("ent_box3");
@@ -509,6 +574,7 @@
         }, dealy + 4);
         setTimeout(function () {
             var_box2.setAttribute('visible', 'true');
+            var_box0.setAttribute('visible', 'true');
             var_text2.setAttribute('value', '1. Products Offerings\n2. Service Offerings');
             var_complete.setAttribute('visible', 'true');
         }, dealy + 6);

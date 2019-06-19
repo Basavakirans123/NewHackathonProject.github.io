@@ -368,7 +368,7 @@
       <a-assets>
             <script id="box0" type="text/x-nunjucks-template">
                 <img id="boxtexture0" src="img/aboutSG.png" crossOrigin="anonymous">
-                <a-box src="#boxtexture0" position="0 60 -90" rotation="40 0 0" geometry="height:50;width:80"</a-box>
+                <a-box src="#boxtexture0" position="0 75 -90" rotation="40 0 0" geometry="height:50;width:80"</a-box>
                 </script>
           <script id="box1" type="text/x-nunjucks-template">
             <img id="boxtexture1" src="img/texture_is.png" crossOrigin="anonymous">
@@ -411,12 +411,14 @@
             </a-box>
             </script>
             <script id="scene3_0" type="text/x-nunjucks-template">      
-                <a-image src="img\wealthPlanning\image1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                <a-image src="img\AboutSG\sgpb2.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
-                <a-image src="img\wealthPlanning\image1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="4" height="2.6">
+                <a-image src="img\AboutSG\sggroup1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="4" height="2.6">
                     <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
-                <a-image src="img\wealthPlanning\image1.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
+                <a-image src="img\AboutSG\3steps.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>     
+                <a-image src="img\AboutSG\sglux4.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
+                        <a-animation attribute="position" from="-60 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
                 <a-sky color="#E6E6FA"></a-sky>
             </script>
             <script id="scene3_1" type="text/x-nunjucks-template">      
@@ -440,12 +442,12 @@
             </script>
             <script id="scene3_4" type="text/x-nunjucks-template">
                 <a-image src="img\corporateSolutions\corporate solutions.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="0 15 -0" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image>
+                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image>
                 <a-sky color="#DB7093"></a-sky>
             </script>
             <script id="scene3_5" type="text/x-nunjucks-template">  
-                <a-image src="img\finance\financ3.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
+                <a-image src="img\finance\financ3.png" position="0 5 -35" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                    <a-animation attribute="position" from="0 15 -35" to="0 5 -35" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
                 <a-image src="img\finance\financ1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="4" height="2.6">
                     <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
                 <a-image src="img\finance\financ2.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
@@ -491,26 +493,26 @@
     <a-entity id="ent_scene3_4"template='src: #scene3_4' visible='false' ></a-entity>
     <a-entity id="ent_scene3_5"template='src: #scene3_5' visible='false' ></a-entity>
 
-    <a-text id="id_text1" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="15 9 -3" rotation="0 -90 0" scale="5 5 5" color="red">
+    <a-text id="id_text1" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="15 9 -3" rotation="0 -90 0" scale="5 5 5" color="#FF8C00">
                 <a-animation attribute="position" from="15 4 -3" to="15 7 -3" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
                 <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
                 </a-text>
 
-    <a-text id="id_text2" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="-3 9 -15" rotation="0 0 0" scale="5 5 5" color="red" >
+    <a-text id="id_text2" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="-3 9 -15" rotation="0 0 0" scale="5 5 5" color="#FF8C00" >
                 <a-animation attribute="position" from="-3 4 -15" to="-3 7 -15" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
                 <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation></a-text>
 
-    <a-text id="id_text3" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="-15 9 3" rotation="0 90 0" scale="5 5 5" color="red">
+    <a-text id="id_text3" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="-15 9 3" rotation="0 90 0" scale="5 5 5" color="#FF8C00">
                 <a-animation attribute="position" from="-15 4 3" to="-15 7 3" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
                 <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
                 </a-text>
 
-    <a-text id="id_text4" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="-20 9 -15" rotation="0 45 0" scale="5 5 5" color="red">
+    <a-text id="id_text4" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="-20 9 -15" rotation="0 45 0" scale="5 5 5" color="#FF8C00">
                 <a-animation attribute="position" from="-20 4 -15" to="-20 9 -15" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
                 <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
                 </a-text>
 
-    <a-text id="id_text5" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="12 9 -15" rotation="0 -45 0" scale="5 5 5" color="red">
+    <a-text id="id_text5" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="12 9 -15" rotation="0 -45 0" scale="5 5 5" color="#FF8C00">
                 <a-animation attribute="position" from="12 7 -15" to="12 11 -15" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
                 <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
                 </a-text>

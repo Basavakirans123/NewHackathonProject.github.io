@@ -1,397 +1,462 @@
 <!-- /src/index.html -->
 <!DOCTYPE html>
-<head>
-    <title>Cognitive Squad Scene</title>
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script> 
-    <script src="https://unpkg.com/aframe-template-component@^3.1.1/dist/aframe-template-component.min.js"></script> 
-    <script src="https://unpkg.com/aframe-multi-video-component/dist/aframe-multi-video-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
-   </head>
 
-  <body>
-      <script type="text/javascript">
-		  AFRAME.registerComponent('box0listner', {
-		  init: function () {
-		  var var_text1 = document.getElementById("id_text1");
-		  var var_text2 = document.getElementById("id_text2");
-		  var var_text3 = document.getElementById("id_text3");
-		  var var_text4 = document.getElementById("id_text4");
-		  var var_text5 = document.getElementById("id_text5");
-		  var var_box1 = document.getElementById("ent_box1");
-		  var var_box2 = document.getElementById("ent_box2");
-		  var var_box3 = document.getElementById("ent_box3");
-		  var var_box4 = document.getElementById("ent_box4");
-		  var var_box5 = document.getElementById("ent_box5");
-		  var vid = document.getElementById('ent_vid');
-		  var var_back = document.getElementById('back');
-		  var var_scene3_0 = document.getElementById("ent_scene3_0");
-		  var var_complete = document.getElementById("complete");
-		  var var_aud = document.getElementById("aud");
-		  this.el.addEventListener('mouseenter', function (evt) {
-		  var_text1.setAttribute('visible', 'true');
-		  });
-		  this.el.addEventListener('mouseleave', function (evt) {
-		  var_text1.setAttribute('visible', 'false');
-		  });
-		  this.el.addEventListener('click', function (evt) {
-		  var_scene3_0.setAttribute('visible', 'true');
-		  var_back.setAttribute('visible', 'true');
-		  vid.setAttribute('visible', 'false');
-		  var_box1.setAttribute('visible', 'false');
-		  var_box2.setAttribute('visible', 'false');
-		  var_box3.setAttribute('visible', 'false');
-		  var_box4.setAttribute('visible', 'false');
-		  var_box5.setAttribute('visible', 'false');
-		  this.setAttribute('visible', 'false');
-		  var_text1.setAttribute('value', '');
-		  var_text2.setAttribute('value', '');
-		  var_text3.setAttribute('value', '');
-		  var_text4.setAttribute('value', '');
-		  var_text5.setAttribute('value', '');
-		  var_back.setAttribute('visible', 'true');
-		  vid.setAttribute('visible', 'false');
-		  var_complete.setAttribute('visible', 'false');
-		  var_aud.setAttribute('src', 'audio/SGOverview.m4a');
-		  var_aud.play()
-		  });
-		  }
-		  });
-		  AFRAME.registerComponent('box1listner', {
-		  init: function () {
-		  var var_text1 = document.getElementById("id_text1");
-		  var var_text2 = document.getElementById("id_text2");
-		  var var_text3 = document.getElementById("id_text3");
-		  var var_text4 = document.getElementById("id_text4");
-		  var var_text5 = document.getElementById("id_text5");
-		  var var_box0 = document.getElementById("ent_box0");
-		  var var_box2 = document.getElementById("ent_box2");
-		  var var_box3 = document.getElementById("ent_box3");
-		  var var_box4 = document.getElementById("ent_box4");
-		  var var_box5 = document.getElementById("ent_box5");
-		  var vid = document.getElementById('ent_vid');
-		  var var_back = document.getElementById('back');
-		  var var_scene3_1 = document.getElementById("ent_scene3_1");
-		  var var_complete = document.getElementById("complete");
-		  var var_aud = document.getElementById("aud");
-		  this.el.addEventListener('mouseenter', function (evt) {
-		  var_text1.setAttribute('visible', 'true');
-		  });
-		  this.el.addEventListener('mouseleave', function (evt) {
-		  var_text1.setAttribute('visible', 'false');
-		  });
-		  this.el.addEventListener('click', function (evt) {
-		  var_scene3_1.setAttribute('visible', 'true');
-		  var_back.setAttribute('visible', 'true');
-		  vid.setAttribute('visible', 'false');
-		  var_box0.setAttribute('visible', 'false');
-		  var_box2.setAttribute('visible', 'false');
-		  var_box3.setAttribute('visible', 'false');
-		  var_box4.setAttribute('visible', 'false');
-		  var_box5.setAttribute('visible', 'false');
-		  this.setAttribute('visible', 'false');
-		  var_text1.setAttribute('value', '');
-		  var_text2.setAttribute('value', '');
-		  var_text3.setAttribute('value', '');
-		  var_text4.setAttribute('value', '');
-		  var_text5.setAttribute('value', '');
-		  var_back.setAttribute('visible', 'true');
-		  vid.setAttribute('visible', 'false');
-		  var_complete.setAttribute('visible', 'false');
-		  var_aud.setAttribute('src', 'audio/investmentSolutions.m4a');
-		  var_aud.play()
-		  });
-		  }
-		  });
-		  AFRAME.registerComponent('box2listner', {
-		  init: function () {
-		  var var_scene3_2 = document.getElementById("ent_scene3_2");
-		  var vid = document.getElementById('ent_vid');
-		  var var_back = document.getElementById('back');
-		  var var_text1 = document.getElementById("id_text1");
-		  var var_text2 = document.getElementById("id_text2");
-		  var var_text3 = document.getElementById("id_text3");
-		  var var_text4 = document.getElementById("id_text4");
-		  var var_text5 = document.getElementById("id_text5");
-		  var var_box0 = document.getElementById("ent_box0");
-		  var var_box1 = document.getElementById("ent_box1");
-		  var var_box3 = document.getElementById("ent_box3");
-		  var var_box4 = document.getElementById("ent_box4");
-		  var var_box5 = document.getElementById("ent_box5");
-		  var var_complete = document.getElementById("complete");
-		  var var_aud = document.getElementById("aud");
-		  this.el.addEventListener('mouseenter', function (evt) {
-		  var_text2.setAttribute('visible', 'true');
-		  });
-		  this.el.addEventListener('mouseleave', function (evt) {
-		  var_text2.setAttribute('visible', 'false');
-		  });
-		  this.el.addEventListener('click', function (evt) {
-		  var_scene3_2.setAttribute('visible', 'true');
-		  var_back.setAttribute('visible', 'true');
-		  var_back.setAttribute('position', '0 -18 -30');
-		  vid.setAttribute('visible', 'false');
-		  var_box0.setAttribute('visible', 'false');
-		  var_box1.setAttribute('visible', 'false');
-		  var_box3.setAttribute('visible', 'false');
-		  var_box4.setAttribute('visible', 'false');
-		  var_box5.setAttribute('visible', 'false');
-		  var_text1.setAttribute('value', '');
-		  var_text2.setAttribute('value', '');
-		  var_text3.setAttribute('value', '');
-		  var_text4.setAttribute('value', '');
-		  var_text5.setAttribute('value', '');
-		  this.setAttribute('visible', 'false');
-		  var_complete.setAttribute('visible', 'false');
-		  var_aud.setAttribute('src', 'audio/wealthplanning.m4a');
-		  var_aud.play()
-		  });
-		  }
-		  });
-		  AFRAME.registerComponent('box3listner', {
-		  init: function () {
-		  var var_text1 = document.getElementById("id_text1");
-		  var var_text2 = document.getElementById("id_text2");
-		  var var_text3 = document.getElementById("id_text3");
-		  var var_text4 = document.getElementById("id_text4");
-		  var var_text5 = document.getElementById("id_text5");
-		  var var_box0 = document.getElementById("ent_box0");
-		  var var_box2 = document.getElementById("ent_box2");
-		  var var_box1 = document.getElementById("ent_box1");
-		  var var_box4 = document.getElementById("ent_box4");
-		  var var_box5 = document.getElementById("ent_box5");
-		  var vid = document.getElementById('ent_vid');
-		  var var_back = document.getElementById('back');
-		  var var_scene3_3 = document.getElementById("ent_scene3_3");
-		  var var_complete = document.getElementById("complete");
-		  var var_aud = document.getElementById("aud");
-		  this.el.addEventListener('mouseenter', function (evt) {
-		  var_text3.setAttribute('visible', 'true');
-		  });
-		  this.el.addEventListener('mouseleave', function (evt) {
-		  var_text3.setAttribute('visible', 'false');
-		  });
-		  this.el.addEventListener('click', function (evt) {
-		  var_scene3_3.setAttribute('visible', 'true');
-		  var_back.setAttribute('visible', 'true');
-		  var_back.setAttribute('position', '0 -18 -30');
-		  vid.setAttribute('visible', 'false');
-		  var_box0.setAttribute('visible', 'false');
-		  var_box2.setAttribute('visible', 'false');
-		  var_box1.setAttribute('visible', 'false');
-		  var_box4.setAttribute('visible', 'false');
-		  var_box5.setAttribute('visible', 'false');
-		  this.setAttribute('visible', 'false');
-		  var_text1.setAttribute('value', '');
-		  var_text2.setAttribute('value', '');
-		  var_text3.setAttribute('value', '');
-		  var_text4.setAttribute('value', '');
-		  var_text5.setAttribute('value', '');
-		  var_back.setAttribute('visible', 'true');
-		  vid.setAttribute('visible', 'false');
-		  var_complete.setAttribute('visible', 'false');
-		  var_aud.setAttribute('src', 'audio/artAndPhilanthrophy.m4a');
-		  var_aud.play()
-		  });
-		  }
-		  });
-		  AFRAME.registerComponent('box4listner', {
-		  init: function () {
-		  var var_text1 = document.getElementById("id_text1");
-		  var var_text2 = document.getElementById("id_text2");
-		  var var_text3 = document.getElementById("id_text3");
-		  var var_text4 = document.getElementById("id_text4");
-		  var var_text5 = document.getElementById("id_text5");
-		  var var_box0 = document.getElementById("ent_box0");
-		  var var_box2 = document.getElementById("ent_box2");
-		  var var_box3 = document.getElementById("ent_box3");
-		  var var_box4 = document.getElementById("ent_box4");
-		  var var_box5 = document.getElementById("ent_box5");
-		  var vid = document.getElementById('ent_vid');
-		  var var_back = document.getElementById('back');
-		  var var_scene3_4 = document.getElementById("ent_scene3_4");
-		  var var_complete = document.getElementById("complete");
-		  var var_aud = document.getElementById("aud");
-		  this.el.addEventListener('mouseenter', function (evt) {
-		  var_text4.setAttribute('visible', 'true');
-		  });
-		  this.el.addEventListener('mouseleave', function (evt) {
-		  var_text4.setAttribute('visible', 'false');
-		  });
-		  this.el.addEventListener('click', function (evt) {
-		  var_scene3_4.setAttribute('visible', 'true');
-		  var_back.setAttribute('visible', 'true');
-		  vid.setAttribute('visible', 'false');
-		  var_box0.setAttribute('visible', 'false');
-		  var_box2.setAttribute('visible', 'false');
-		  var_box1.setAttribute('visible', 'false');
-		  var_box3.setAttribute('visible', 'false');
-		  var_box5.setAttribute('visible', 'false');
-		  this.setAttribute('visible', 'false');
-		  var_text1.setAttribute('value', '');
-		  var_text2.setAttribute('value', '');
-		  var_text3.setAttribute('value', '');
-		  var_text4.setAttribute('value', '');
-		  var_text5.setAttribute('value', '');
-		  var_back.setAttribute('visible', 'true');
-		  vid.setAttribute('visible', 'false');
-		  var_complete.setAttribute('visible', 'false');
-		  var_aud.setAttribute('src', 'audio/corporateSolutions.m4a');
-		  var_aud.play()
-		  });
-		  }
-		  });
-		  AFRAME.registerComponent('box5listner', {
-		  init: function () {
-		  var var_text1 = document.getElementById("id_text1");
-		  var var_text2 = document.getElementById("id_text2");
-		  var var_text3 = document.getElementById("id_text3");
-		  var var_text4 = document.getElementById("id_text4");
-		  var var_text5 = document.getElementById("id_text5");
-		  var var_box0 = document.getElementById("ent_box0");
-		  var var_box2 = document.getElementById("ent_box2");
-		  var var_box3 = document.getElementById("ent_box3");
-		  var var_box4 = document.getElementById("ent_box4");
-		  var var_box1 = document.getElementById("ent_box1");
-		  var vid = document.getElementById('ent_vid');
-		  var var_back = document.getElementById('back');
-		  var var_scene3_5 = document.getElementById("ent_scene3_5");
-		  var var_complete = document.getElementById("complete");
-		  var var_aud = document.getElementById("aud");
-		  this.el.addEventListener('mouseenter', function (evt) {
-		  var_text5.setAttribute('visible', 'true');
-		  });
-		  this.el.addEventListener('mouseleave', function (evt) {
-		  var_text5.setAttribute('visible', 'false');
-		  });
-		  this.el.addEventListener('click', function (evt) {
-		  var_scene3_5.setAttribute('visible', 'true');
-		  var_back.setAttribute('visible', 'true');
-		  var_back.setAttribute('position', '0 -18 -30');
-		  vid.setAttribute('visible', 'false');
-		  var_box0.setAttribute('visible', 'false');
-		  var_box2.setAttribute('visible', 'false');
-		  var_box1.setAttribute('visible', 'false');
-		  var_box4.setAttribute('visible', 'false');
-		  var_box3.setAttribute('visible', 'false');
-		  this.setAttribute('visible', 'false');
-		  var_text1.setAttribute('value', '');
-		  var_text2.setAttribute('value', '');
-		  var_text3.setAttribute('value', '');
-		  var_text4.setAttribute('value', '');
-		  var_text5.setAttribute('value', '');
-		  var_back.setAttribute('visible', 'true');
-		  vid.setAttribute('visible', 'false');
-		  var_complete.setAttribute('visible', 'false');
-		  var_aud.setAttribute('src', 'audio/financing.m4a');
-		  var_aud.play()
-		  });
-		  }
-		  });
-		  AFRAME.registerComponent('control-goback', {
-		  init: function () {
-		  var vid = document.getElementById('ent_vid');
-		  var var_scene3_0 = document.getElementById("ent_scene3_0");
-		  var var_scene3_1 = document.getElementById("ent_scene3_1");
-		  var var_scene3_2 = document.getElementById("ent_scene3_2");
-		  var var_scene3_3 = document.getElementById("ent_scene3_3");
-		  var var_scene3_4 = document.getElementById("ent_scene3_4");
-		  var var_scene3_5 = document.getElementById("ent_scene3_5");
-		  var var_box0 = document.getElementById("ent_box0");
-		  var var_box1 = document.getElementById("ent_box1");
-		  var var_box2 = document.getElementById("ent_box2");
-		  var var_box3 = document.getElementById("ent_box3");
-		  var var_box4 = document.getElementById("ent_box4");
-		  var var_box5 = document.getElementById("ent_box5");
-		  var var_text1 = document.getElementById("id_text1");
-		  var var_text2 = document.getElementById("id_text2");
-		  var var_text3 = document.getElementById("id_text3");
-		  var var_text4 = document.getElementById("id_text4");
-		  var var_text5 = document.getElementById("id_text5");
-		  var var_complete = document.getElementById("complete");
-		  var var_aud = document.getElementById("aud");
-		  this.el.addEventListener('click', function (evt) {
-		  this.setAttribute('visible', 'false');
-		  var_box0.setAttribute('visible', 'true');
-		  var_box1.setAttribute('visible', 'true');
-		  vid.setAttribute('visible', 'true');
-		  var_scene3_0.setAttribute('visible', 'false');
-		  var_scene3_1.setAttribute('visible', 'false');
-		  var_scene3_2.setAttribute('visible', 'false');
-		  var_scene3_3.setAttribute('visible', 'false');
-		  var_scene3_4.setAttribute('visible', 'false');
-		  var_scene3_5.setAttribute('visible', 'false');
-		  var_box2.setAttribute('visible', 'true');
-		  var_box3.setAttribute('visible', 'true');
-		  var_box4.setAttribute('visible', 'true');
-		  var_box5.setAttribute('visible', 'true');
-		  var_text1.setAttribute('value', '1. Managed\n2. Adversory\n3. Execution');
-		  var_text2.setAttribute('value', '1. Products Offerings\n2. Service Offerings');
-		  var_text3.setAttribute('value', '1. Art Advisory\n2. Philanthropy');
-		  var_text4.setAttribute('value', '1. Strategic Option\n2. Investment Opportunities\n3. Assets accepted as security\n4. Flexibility Of  Theme');
-		  var_text5.setAttribute('value', '1. Line1\n2. Line 2');
-		  var_complete.setAttribute('visible', 'true');
-		  var_aud.setAttribute('src', '');
-		  });
-		  }
-		  });
-		  AFRAME.registerComponent('control-complete', {
-		  init: function () {
-		  var vid = document.getElementById('ent_vid');
-		  var var_scene3_0 = document.getElementById("ent_scene3_0");
-		  var var_scene3_1 = document.getElementById("ent_scene3_1");
-		  var var_scene3_2 = document.getElementById("ent_scene3_2");
-		  var var_scene3_3 = document.getElementById("ent_scene3_3");
-		  var var_scene3_4 = document.getElementById("ent_scene3_4");
-		  var var_scene3_5 = document.getElementById("ent_scene3_5");
-		  var var_box0 = document.getElementById("ent_box0");
-		  var var_box1 = document.getElementById("ent_box1");
-		  var var_box2 = document.getElementById("ent_box2");
-		  var var_box3 = document.getElementById("ent_box3");
-		  var var_box4 = document.getElementById("ent_box4");
-		  var var_box5 = document.getElementById("ent_box5");
-		  var var_text1 = document.getElementById("id_text1");
-		  var var_text2 = document.getElementById("id_text2");
-		  var var_text3 = document.getElementById("id_text3");
-		  var var_text4 = document.getElementById("id_text4");
-		  var var_text5 = document.getElementById("id_text5");
-		  var var_back = document.getElementById("back");
-		  var var_thankyou = document.getElementById("ent_thankyou");
-		  var var_aud = document.getElementById("aud");
-		  this.el.addEventListener('click', function (evt) {
-		  this.setAttribute('visible', 'false');
-		  var_box0.setAttribute('visible', 'false');
-		  var_box1.setAttribute('visible', 'false');
-		  vid.setAttribute('visible', 'false');
-		  var_scene3_0.setAttribute('visible', 'false');
-		  var_scene3_1.setAttribute('visible', 'false');
-		  var_scene3_2.setAttribute('visible', 'false');
-		  var_scene3_3.setAttribute('visible', 'false');
-		  var_scene3_4.setAttribute('visible', 'false');
-		  var_scene3_5.setAttribute('visible', 'false');
-		  var_box2.setAttribute('visible', 'false');
-		  var_box3.setAttribute('visible', 'false');
-		  var_box4.setAttribute('visible', 'false');
-		  var_box5.setAttribute('visible', 'false');
-		  var_text1.setAttribute('value', '');
-		  var_text2.setAttribute('value', '');
-		  var_text3.setAttribute('value', '');
-		  var_text4.setAttribute('value', '');
-		  var_text5.setAttribute('value', '');
-		  var_back.setAttribute('visible', 'false');
-		  var_thankyou.setAttribute('visible', 'true');
-		  var_aud.setAttribute('src', 'audio/endline.m4a');
-		  var_aud.play()
-		  });
-		  }
-		  });
-	  </script>
-      <a-scene>
-      <a-assets>
-            <script id="box0" type="text/x-nunjucks-template">
+<head>
+	<title>Cognitive Squad Scene</title>
+	<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-template-component@^3.1.1/dist/aframe-template-component.min.js"></script>
+	<script src="https://unpkg.com/aframe-multi-video-component/dist/aframe-multi-video-component.min.js"></script>
+	<script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+</head>
+
+<body>
+	<script type="text/javascript">
+	AFRAME.registerComponent('start-tour', {
+			init: function () {
+				var vid = document.getElementById('vid');
+				var var_box0 = document.getElementById("ent_box0");
+				var var_box1 = document.getElementById("ent_box1");
+				var var_box2 = document.getElementById("ent_box2");
+				var var_box3 = document.getElementById("ent_box3");
+				var var_box4 = document.getElementById("ent_box4");
+				var var_box5 = document.getElementById("ent_box5");
+				var var_text1 = document.getElementById("id_text1");
+				var var_text2 = document.getElementById("id_text2");
+				var var_text3 = document.getElementById("id_text3");
+				var var_text4 = document.getElementById("id_text4");
+				var var_text5 = document.getElementById("id_text5");
+				var var_logo = document.getElementById("logo");
+				var var_TN = document.getElementById("TN");
+				var var_complete = document.getElementById("complete");
+				var var_aud = document.getElementById('aud');
+				var dealy = 48000;
+				this.el.addEventListener('click', function (evt) {
+					setTimeout(function () {
+						var_aud.setAttribute('src', 'audio/introduction.mp3');
+						var_aud.play();
+					}, 1000);
+					setTimeout(function () {
+						vid.play();
+					}, 27000);
+					setTimeout(function () {
+						vid.setAttribute('src', 'video/video1.mp4');
+						vid.play();
+						var_logo.setAttribute('visible', 'false');
+						var_TN.setAttribute('visible', 'false');
+					}, dealy);
+					setTimeout(function () {
+						var_box1.setAttribute('visible', 'true');
+						var_text1.setAttribute('value', '1. Managed\n2. Advisory\n3. Execution');
+						var_box3.setAttribute('visible', 'true');
+						var_text3.setAttribute('value', '1. Art Advisory\n2. Philanthropy');
+					}, dealy + 1000);
+					setTimeout(function () {
+						var_box4.setAttribute('visible', 'true');
+						var_text4.setAttribute('value', '1. Strategic Options for Entrepreneurs\n2. Investment opportunities for Experienced Investors');
+						var_box5.setAttribute('visible', 'true');
+						var_text5.setAttribute('value', '1. Liquidity Facilities\n2. Lombard Credits\n3. Mortgage Loans\n4. Mega/Private Jets Financing');
+					}, dealy + 2000);
+					setTimeout(function () {
+						var_box2.setAttribute('visible', 'true');
+						var_box0.setAttribute('visible', 'true');
+						var_text2.setAttribute('value', '1. Wealth Planning Strategy\n2. Fiduciary Services\n3. Life Insurance\n4. Succession Planning Tool\n5. Dedicated & Family funds');
+						var_complete.setAttribute('visible', 'true');
+						var_aud.setAttribute('src', 'audio/insidewaterguide.m4a');
+						var_aud.play();
+					}, dealy + 3000);
+					this.setAttribute('visible', 'false');
+				});
+			}
+		});
+		AFRAME.registerComponent('go-reTour', {
+			init: function () {
+				this.el.addEventListener('click', function (evt) {
+					window.location.reload(true)
+				});
+			}
+		});
+		AFRAME.registerComponent('box0listner', {
+			init: function () {
+				var var_text1 = document.getElementById("id_text1");
+				var var_text2 = document.getElementById("id_text2");
+				var var_text3 = document.getElementById("id_text3");
+				var var_text4 = document.getElementById("id_text4");
+				var var_text5 = document.getElementById("id_text5");
+				var var_box1 = document.getElementById("ent_box1");
+				var var_box2 = document.getElementById("ent_box2");
+				var var_box3 = document.getElementById("ent_box3");
+				var var_box4 = document.getElementById("ent_box4");
+				var var_box5 = document.getElementById("ent_box5");
+				var vid = document.getElementById('ent_vid');
+				var var_back = document.getElementById('back');
+				var var_scene3_0 = document.getElementById("ent_scene3_0");
+				var var_complete = document.getElementById("complete");
+				var var_aud = document.getElementById("aud");
+				this.el.addEventListener('mouseenter', function (evt) {
+					var_text1.setAttribute('visible', 'true');
+				});
+				this.el.addEventListener('mouseleave', function (evt) {
+					var_text1.setAttribute('visible', 'false');
+				});
+				this.el.addEventListener('click', function (evt) {
+					var_scene3_0.setAttribute('visible', 'true');
+					var_back.setAttribute('visible', 'true');
+					vid.setAttribute('visible', 'false');
+					var_box1.setAttribute('visible', 'false');
+					var_box2.setAttribute('visible', 'false');
+					var_box3.setAttribute('visible', 'false');
+					var_box4.setAttribute('visible', 'false');
+					var_box5.setAttribute('visible', 'false');
+					this.setAttribute('visible', 'false');
+					var_text1.setAttribute('value', '');
+					var_text2.setAttribute('value', '');
+					var_text3.setAttribute('value', '');
+					var_text4.setAttribute('value', '');
+					var_text5.setAttribute('value', '');
+					var_back.setAttribute('visible', 'true');
+					vid.setAttribute('visible', 'false');
+					var_complete.setAttribute('visible', 'false');
+					var_aud.setAttribute('src', 'audio/SGOverview.m4a');
+					var_aud.play()
+				});
+			}
+		});
+		AFRAME.registerComponent('box1listner', {
+			init: function () {
+				var var_text1 = document.getElementById("id_text1");
+				var var_text2 = document.getElementById("id_text2");
+				var var_text3 = document.getElementById("id_text3");
+				var var_text4 = document.getElementById("id_text4");
+				var var_text5 = document.getElementById("id_text5");
+				var var_box0 = document.getElementById("ent_box0");
+				var var_box2 = document.getElementById("ent_box2");
+				var var_box3 = document.getElementById("ent_box3");
+				var var_box4 = document.getElementById("ent_box4");
+				var var_box5 = document.getElementById("ent_box5");
+				var vid = document.getElementById('ent_vid');
+				var var_back = document.getElementById('back');
+				var var_scene3_1 = document.getElementById("ent_scene3_1");
+				var var_complete = document.getElementById("complete");
+				var var_aud = document.getElementById("aud");
+				this.el.addEventListener('mouseenter', function (evt) {
+					var_text1.setAttribute('visible', 'true');
+				});
+				this.el.addEventListener('mouseleave', function (evt) {
+					var_text1.setAttribute('visible', 'false');
+				});
+				this.el.addEventListener('click', function (evt) {
+					var_scene3_1.setAttribute('visible', 'true');
+					var_back.setAttribute('visible', 'true');
+					vid.setAttribute('visible', 'false');
+					var_box0.setAttribute('visible', 'false');
+					var_box2.setAttribute('visible', 'false');
+					var_box3.setAttribute('visible', 'false');
+					var_box4.setAttribute('visible', 'false');
+					var_box5.setAttribute('visible', 'false');
+					this.setAttribute('visible', 'false');
+					var_text1.setAttribute('value', '');
+					var_text2.setAttribute('value', '');
+					var_text3.setAttribute('value', '');
+					var_text4.setAttribute('value', '');
+					var_text5.setAttribute('value', '');
+					var_back.setAttribute('visible', 'true');
+					vid.setAttribute('visible', 'false');
+					var_complete.setAttribute('visible', 'false');
+					var_aud.setAttribute('src', 'audio/investmentSolutions.m4a');
+					var_aud.play()
+				});
+			}
+		});
+		AFRAME.registerComponent('box2listner', {
+			init: function () {
+				var var_scene3_2 = document.getElementById("ent_scene3_2");
+				var vid = document.getElementById('ent_vid');
+				var var_back = document.getElementById('back');
+				var var_text1 = document.getElementById("id_text1");
+				var var_text2 = document.getElementById("id_text2");
+				var var_text3 = document.getElementById("id_text3");
+				var var_text4 = document.getElementById("id_text4");
+				var var_text5 = document.getElementById("id_text5");
+				var var_box0 = document.getElementById("ent_box0");
+				var var_box1 = document.getElementById("ent_box1");
+				var var_box3 = document.getElementById("ent_box3");
+				var var_box4 = document.getElementById("ent_box4");
+				var var_box5 = document.getElementById("ent_box5");
+				var var_complete = document.getElementById("complete");
+				var var_aud = document.getElementById("aud");
+				this.el.addEventListener('mouseenter', function (evt) {
+					var_text2.setAttribute('visible', 'true');
+				});
+				this.el.addEventListener('mouseleave', function (evt) {
+					var_text2.setAttribute('visible', 'false');
+				});
+				this.el.addEventListener('click', function (evt) {
+					var_scene3_2.setAttribute('visible', 'true');
+					var_back.setAttribute('visible', 'true');
+					var_back.setAttribute('position', '0 -18 -30');
+					vid.setAttribute('visible', 'false');
+					var_box0.setAttribute('visible', 'false');
+					var_box1.setAttribute('visible', 'false');
+					var_box3.setAttribute('visible', 'false');
+					var_box4.setAttribute('visible', 'false');
+					var_box5.setAttribute('visible', 'false');
+					var_text1.setAttribute('value', '');
+					var_text2.setAttribute('value', '');
+					var_text3.setAttribute('value', '');
+					var_text4.setAttribute('value', '');
+					var_text5.setAttribute('value', '');
+					this.setAttribute('visible', 'false');
+					var_complete.setAttribute('visible', 'false');
+					var_aud.setAttribute('src', 'audio/wealthplanning.m4a');
+					var_aud.play()
+				});
+			}
+		});
+		AFRAME.registerComponent('box3listner', {
+			init: function () {
+				var var_text1 = document.getElementById("id_text1");
+				var var_text2 = document.getElementById("id_text2");
+				var var_text3 = document.getElementById("id_text3");
+				var var_text4 = document.getElementById("id_text4");
+				var var_text5 = document.getElementById("id_text5");
+				var var_box0 = document.getElementById("ent_box0");
+				var var_box2 = document.getElementById("ent_box2");
+				var var_box1 = document.getElementById("ent_box1");
+				var var_box4 = document.getElementById("ent_box4");
+				var var_box5 = document.getElementById("ent_box5");
+				var vid = document.getElementById('ent_vid');
+				var var_back = document.getElementById('back');
+				var var_scene3_3 = document.getElementById("ent_scene3_3");
+				var var_complete = document.getElementById("complete");
+				var var_aud = document.getElementById("aud");
+				this.el.addEventListener('mouseenter', function (evt) {
+					var_text3.setAttribute('visible', 'true');
+				});
+				this.el.addEventListener('mouseleave', function (evt) {
+					var_text3.setAttribute('visible', 'false');
+				});
+				this.el.addEventListener('click', function (evt) {
+					var_scene3_3.setAttribute('visible', 'true');
+					var_back.setAttribute('visible', 'true');
+					var_back.setAttribute('position', '0 -18 -30');
+					vid.setAttribute('visible', 'false');
+					var_box0.setAttribute('visible', 'false');
+					var_box2.setAttribute('visible', 'false');
+					var_box1.setAttribute('visible', 'false');
+					var_box4.setAttribute('visible', 'false');
+					var_box5.setAttribute('visible', 'false');
+					this.setAttribute('visible', 'false');
+					var_text1.setAttribute('value', '');
+					var_text2.setAttribute('value', '');
+					var_text3.setAttribute('value', '');
+					var_text4.setAttribute('value', '');
+					var_text5.setAttribute('value', '');
+					var_back.setAttribute('visible', 'true');
+					vid.setAttribute('visible', 'false');
+					var_complete.setAttribute('visible', 'false');
+					var_aud.setAttribute('src', 'audio/artAndPhilanthrophy.m4a');
+					var_aud.play()
+				});
+			}
+		});
+		AFRAME.registerComponent('box4listner', {
+			init: function () {
+				var var_text1 = document.getElementById("id_text1");
+				var var_text2 = document.getElementById("id_text2");
+				var var_text3 = document.getElementById("id_text3");
+				var var_text4 = document.getElementById("id_text4");
+				var var_text5 = document.getElementById("id_text5");
+				var var_box0 = document.getElementById("ent_box0");
+				var var_box2 = document.getElementById("ent_box2");
+				var var_box3 = document.getElementById("ent_box3");
+				var var_box1 = document.getElementById("ent_box1");
+				var var_box5 = document.getElementById("ent_box5");
+				var vid = document.getElementById('ent_vid');
+				var var_back = document.getElementById('back');
+				var var_scene3_4 = document.getElementById("ent_scene3_4");
+				var var_complete = document.getElementById("complete");
+				var var_aud = document.getElementById("aud");
+				this.el.addEventListener('mouseenter', function (evt) {
+					var_text4.setAttribute('visible', 'true');
+				});
+				this.el.addEventListener('mouseleave', function (evt) {
+					var_text4.setAttribute('visible', 'false');
+				});
+				this.el.addEventListener('click', function (evt) {
+					var_scene3_4.setAttribute('visible', 'true');
+					var_back.setAttribute('visible', 'true');
+					vid.setAttribute('visible', 'false');
+					var_box0.setAttribute('visible', 'false');
+					var_box2.setAttribute('visible', 'false');
+					var_box1.setAttribute('visible', 'false');
+					var_box3.setAttribute('visible', 'false');
+					var_box5.setAttribute('visible', 'false');
+					this.setAttribute('visible', 'false');
+					var_text1.setAttribute('value', '');
+					var_text2.setAttribute('value', '');
+					var_text3.setAttribute('value', '');
+					var_text4.setAttribute('value', '');
+					var_text5.setAttribute('value', '');
+					var_back.setAttribute('visible', 'true');
+					vid.setAttribute('visible', 'false');
+					var_complete.setAttribute('visible', 'false');
+					var_aud.setAttribute('src', 'audio/corporateSolutions.m4a');
+					var_aud.play();
+				});
+			}
+		});
+		AFRAME.registerComponent('box5listner', {
+			init: function () {
+				var var_text1 = document.getElementById("id_text1");
+				var var_text2 = document.getElementById("id_text2");
+				var var_text3 = document.getElementById("id_text3");
+				var var_text4 = document.getElementById("id_text4");
+				var var_text5 = document.getElementById("id_text5");
+				var var_box0 = document.getElementById("ent_box0");
+				var var_box2 = document.getElementById("ent_box2");
+				var var_box3 = document.getElementById("ent_box3");
+				var var_box4 = document.getElementById("ent_box4");
+				var var_box1 = document.getElementById("ent_box1");
+				var vid = document.getElementById('ent_vid');
+				var var_back = document.getElementById('back');
+				var var_scene3_5 = document.getElementById("ent_scene3_5");
+				var var_complete = document.getElementById("complete");
+				var var_aud = document.getElementById("aud");
+				this.el.addEventListener('mouseenter', function (evt) {
+					var_text5.setAttribute('visible', 'true');
+				});
+				this.el.addEventListener('mouseleave', function (evt) {
+					var_text5.setAttribute('visible', 'false');
+				});
+				this.el.addEventListener('click', function (evt) {
+					var_scene3_5.setAttribute('visible', 'true');
+					var_back.setAttribute('visible', 'true');
+					var_back.setAttribute('position', '0 -18 -30');
+					vid.setAttribute('visible', 'false');
+					var_box0.setAttribute('visible', 'false');
+					var_box2.setAttribute('visible', 'false');
+					var_box1.setAttribute('visible', 'false');
+					var_box4.setAttribute('visible', 'false');
+					var_box3.setAttribute('visible', 'false');
+					this.setAttribute('visible', 'false');
+					var_text1.setAttribute('value', '');
+					var_text2.setAttribute('value', '');
+					var_text3.setAttribute('value', '');
+					var_text4.setAttribute('value', '');
+					var_text5.setAttribute('value', '');
+					var_back.setAttribute('visible', 'true');
+					vid.setAttribute('visible', 'false');
+					var_complete.setAttribute('visible', 'false');
+					var_aud.setAttribute('src', 'audio/financing.m4a');
+					var_aud.play();
+				});
+			}
+		});
+		AFRAME.registerComponent('control-goback', {
+			init: function () {
+				var vid = document.getElementById('ent_vid');
+				var var_scene3_0 = document.getElementById("ent_scene3_0");
+				var var_scene3_1 = document.getElementById("ent_scene3_1");
+				var var_scene3_2 = document.getElementById("ent_scene3_2");
+				var var_scene3_3 = document.getElementById("ent_scene3_3");
+				var var_scene3_4 = document.getElementById("ent_scene3_4");
+				var var_scene3_5 = document.getElementById("ent_scene3_5");
+				var var_box0 = document.getElementById("ent_box0");
+				var var_box1 = document.getElementById("ent_box1");
+				var var_box2 = document.getElementById("ent_box2");
+				var var_box3 = document.getElementById("ent_box3");
+				var var_box4 = document.getElementById("ent_box4");
+				var var_box5 = document.getElementById("ent_box5");
+				var var_text1 = document.getElementById("id_text1");
+				var var_text2 = document.getElementById("id_text2");
+				var var_text3 = document.getElementById("id_text3");
+				var var_text4 = document.getElementById("id_text4");
+				var var_text5 = document.getElementById("id_text5");
+				var var_complete = document.getElementById("complete");
+				var var_aud = document.getElementById("aud");
+				this.el.addEventListener('click', function (evt) {
+					this.setAttribute('visible', 'false');
+					var_box0.setAttribute('visible', 'true');
+					var_box1.setAttribute('visible', 'true');
+					vid.setAttribute('visible', 'true');
+					var_scene3_0.setAttribute('visible', 'false');
+					var_scene3_1.setAttribute('visible', 'false');
+					var_scene3_2.setAttribute('visible', 'false');
+					var_scene3_3.setAttribute('visible', 'false');
+					var_scene3_4.setAttribute('visible', 'false');
+					var_scene3_5.setAttribute('visible', 'false');
+					var_box2.setAttribute('visible', 'true');
+					var_box3.setAttribute('visible', 'true');
+					var_box4.setAttribute('visible', 'true');
+					var_box5.setAttribute('visible', 'true');
+					var_text1.setAttribute('value', '1. Managed\n2. Advisory\n3. Execution');
+					var_text2.setAttribute('value', '1. Wealth Planning Strategy\n2. Fiduciary Services\n3. Life Insurance\n4. Succession Planning Tool\n5. Dedicated & Family funds');
+					var_text3.setAttribute('value', '1. Art Advisory\n2. Philanthropy');
+					var_text4.setAttribute('value', '1. Strategic Options for Entrepreneurs\n2. Investment opportunities for Experienced Investors');
+					var_text5.setAttribute('value', '1. Liquidity Facilities\n2. Lombard Credits\n3. Mortgage Loans\n4. Mega/Private Jets Financing');
+					var_complete.setAttribute('visible', 'true');
+					var_aud.setAttribute('src', '');
+				});
+			}
+		});
+		AFRAME.registerComponent('control-complete', {
+			init: function () {
+				var vid = document.getElementById('ent_vid');
+				var var_scene3_0 = document.getElementById("ent_scene3_0");
+				var var_scene3_1 = document.getElementById("ent_scene3_1");
+				var var_scene3_2 = document.getElementById("ent_scene3_2");
+				var var_scene3_3 = document.getElementById("ent_scene3_3");
+				var var_scene3_4 = document.getElementById("ent_scene3_4");
+				var var_scene3_5 = document.getElementById("ent_scene3_5");
+				var var_box0 = document.getElementById("ent_box0");
+				var var_box1 = document.getElementById("ent_box1");
+				var var_box2 = document.getElementById("ent_box2");
+				var var_box3 = document.getElementById("ent_box3");
+				var var_box4 = document.getElementById("ent_box4");
+				var var_box5 = document.getElementById("ent_box5");
+				var var_text1 = document.getElementById("id_text1");
+				var var_text2 = document.getElementById("id_text2");
+				var var_text3 = document.getElementById("id_text3");
+				var var_text4 = document.getElementById("id_text4");
+				var var_text5 = document.getElementById("id_text5");
+				var var_back = document.getElementById("back");
+				var var_thankyou = document.getElementById("ent_thankyou");
+				var var_aud = document.getElementById("aud");
+				this.el.addEventListener('click', function (evt) {
+					this.setAttribute('visible', 'false');
+					var_box0.setAttribute('visible', 'false');
+					var_box1.setAttribute('visible', 'false');
+					vid.setAttribute('visible', 'false');
+					var_scene3_0.setAttribute('visible', 'false');
+					var_scene3_1.setAttribute('visible', 'false');
+					var_scene3_2.setAttribute('visible', 'false');
+					var_scene3_3.setAttribute('visible', 'false');
+					var_scene3_4.setAttribute('visible', 'false');
+					var_scene3_5.setAttribute('visible', 'false');
+					var_box2.setAttribute('visible', 'false');
+					var_box3.setAttribute('visible', 'false');
+					var_box4.setAttribute('visible', 'false');
+					var_box5.setAttribute('visible', 'false');
+					var_text1.setAttribute('value', '');
+					var_text2.setAttribute('value', '');
+					var_text3.setAttribute('value', '');
+					var_text4.setAttribute('value', '');
+					var_text5.setAttribute('value', '');
+					var_back.setAttribute('visible', 'false');
+					var_thankyou.setAttribute('visible', 'true');
+					var_aud.setAttribute('src', 'audio/endline.m4a');
+					var_aud.play()
+				});
+			}
+		});
+	</script>
+	<a-scene>
+		<a-assets>
+			<script id="box0" type="text/x-nunjucks-template">
                 <img id="boxtexture0" src="img/aboutSG.png" crossOrigin="anonymous">
                 <a-box src="#boxtexture0" position="0 75 -90" rotation="40 0 0" geometry="height:60;width:100"</a-box>
                 </script>
-          <script id="box1" type="text/x-nunjucks-template">
+			<script id="box1" type="text/x-nunjucks-template">
             <img id="boxtexture1" src="img/texture_is.png" crossOrigin="anonymous">
             <a-box src="#boxtexture1" position="30 1.5 0" scale="6 6 6" rotation="150 50 150" radius="1.25" color="#00FFFF" 
             event-set__enter="_event: mouseenter; scale: 9 9 9"
@@ -399,7 +464,7 @@
               <a-animation attribute="rotation" from="20 0 0" to="20 360 20" direction="alternate" dur="8000" repeat="indefinite"></a-animation>
             </a-box>
             </script>
-          <script id="box2" type="text/x-nunjucks-template">
+			<script id="box2" type="text/x-nunjucks-template">
             <img id="boxtexture2" src="img/texture_wp.png" crossOrigin="anonymous">
             <a-box src="#boxtexture2" position="0 1.5 -30" scale="6 6 6" rotation="150 150 150" radius="1.25" color="#00FFFF"
             event-set__enter="_event: mouseenter; scale: 9 9 9"
@@ -407,7 +472,7 @@
               <a-animation attribute="rotation" from="20 0 0" to="20 360 20" direction="alternate" dur="8000" repeat="indefinite"></a-animation>
             </a-box>
             </script>
-          <script id="box3" type="text/x-nunjucks-template">
+			<script id="box3" type="text/x-nunjucks-template">
             <img id="boxtexture3" src="img/texture_ap.png" crossOrigin="anonymous">
             <a-box src="#boxtexture3" position="-30 1.5 0" scale="6 6 6" rotation="150 150 100" radius="1.25" color="#00FFFF"
             event-set__enter="_event: mouseenter; scale: 9 9 9"
@@ -415,7 +480,7 @@
               <a-animation attribute="rotation" from="20 0 0" to="20 360 20" direction="alternate" dur="8000" repeat="indefinite"></a-animation>
             </a-box>
             </script>
-          <script id="box4" type="text/x-nunjucks-template">
+			<script id="box4" type="text/x-nunjucks-template">
             <img id="boxtexture4" src="img/texture_cs.png" crossOrigin="anonymous">
             <a-box src="#boxtexture4" position="-25 1.5 -25" scale="6 6 6" rotation="150 150 100" radius="1.25" color="#00FFFF"
             event-set__enter="_event: mouseenter; scale: 9 9 9"
@@ -423,7 +488,7 @@
               <a-animation attribute="rotation" from="20 0 0" to="20 360 20" direction="alternate" dur="8000" repeat="indefinite"></a-animation>
             </a-box>
             </script>
-          <script id="box5" type="text/x-nunjucks-template">
+			<script id="box5" type="text/x-nunjucks-template">
             <img id="boxtexture5" src="img/texture_f.png" crossOrigin="anonymous">
             <a-box src="#boxtexture5" position="25 1.5 -25" scale="6 6 6" rotation="150 100 100" radius="1.25" color="#00FFFF"
             event-set__enter="_event: mouseenter; scale: 11 11 11"
@@ -431,7 +496,7 @@
               <a-animation attribute="rotation" from="20 0 0" to="20 360 20" direction="alternate" dur="8000" repeat="indefinite"></a-animation>
             </a-box>
             </script>
-            <script id="scene3_0" type="text/x-nunjucks-template">      
+			<script id="scene3_0" type="text/x-nunjucks-template">
                 <a-image src="img\AboutSG\sggroup1.png" position="14 13 -25" scale="15 15 15" rotation="0 -15 0" width="2" height="1.5">
                     <a-animation attribute="position" from="14 15 -25" to="14 5 -25" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
                 <a-image src="img\AboutSG\sgpb2.png" position="-14 5 -25" scale="15 15 15" rotation="0 15 0" width="2" height="1.5">
@@ -440,180 +505,147 @@
                     <a-animation attribute="position" from="25 15 0" to="25 5 0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>     
                 <a-image src="img\AboutSG\sglux4.png" position="-30 5 0" scale="15 15 15" rotation="0 90 0" width="2" height="1.5">
                     <a-animation attribute="position" from="-30 15 0" to="-30 5 -0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
-                <a-sky color="#E6E6FA"></a-sky>
+                <a-sky src="img\AboutSG\aboutSG_sky.png"></a-sky>
             </script>
-            <script id="scene3_1" type="text/x-nunjucks-template">      
+			<script id="scene3_1" type="text/x-nunjucks-template">
                 <a-image src="img\InvestmentSolutions\invs1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
                 <a-image src="img\InvestmentSolutions\invs2.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="4" height="2.6">
                     <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
                 <a-image src="img\InvestmentSolutions\invs3.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
                     <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
-                <a-sky color="#E6E6FA"></a-sky>
+                <a-sky src="img\InvestmentSolutions\Invest_sky.png"></a-sky>
             </script>
-            <script id="scene3_2" type="text/x-nunjucks-template">  
+			<script id="scene3_2" type="text/x-nunjucks-template">
                 <a-image src="img\wealthPlanning\wealthplanning.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image> 
-                <a-sky src="img\CaveImg.png"></a-sky>
+                <a-sky src="img\wealthPlanning\wealth_sky.png"></a-sky>
             </script>
-            <script id="scene3_3" type="text/x-nunjucks-template">       
+			<script id="scene3_3" type="text/x-nunjucks-template">
                 <a-image src="img\Art\art.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image>
-                <a-sky color="#808080"></a-sky>
+                <a-sky src="img\Art\art_sky.png"></a-sky>
             </script>
-            <script id="scene3_4" type="text/x-nunjucks-template">
+			<script id="scene3_4" type="text/x-nunjucks-template">
                 <a-image src="img\CorporateSolutions\corporateSolutions.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image>
-                <a-sky color="#DB7093"></a-sky>
+                <a-sky src="img\CorporateSolutions\corp_sky.png"></a-sky>
             </script>
-            <script id="scene3_5" type="text/x-nunjucks-template">  
+			<script id="scene3_5" type="text/x-nunjucks-template">
                 <a-image src="img\finance\financ3.png" position="0 5 -35" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -35" to="0 5 -35" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
                 <a-image src="img\finance\financ1.png" position="-30 5 -25" scale="15 15 15" rotation="0 15 0" width="4" height="2.6">
                     <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
                 <a-image src="img\finance\financ2.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
                     <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>           
-                <a-sky color="#00FA9A"></a-sky>
+                <a-sky src="img\finance\finance_sky.png"></a-sky>
             </script>
-            <script id="thankyou" type="text/x-nunjucks-template">  
-                <a-image  src="img/ThankYou.png" width="100" height="75" position="0 6 -90" ></a-image>          
-                <a-sky color="#B0E0E6"></a-sky>
+			<script id="thankyou" type="text/x-nunjucks-template">
+				<image id="Thanks"  src="img/ThankYou.png" width="100" height="75" position="0 6 -90" ></image>        
+                <a-sky src="#Thanks"></a-sky>
             </script>
-  
 
 
-      </a-assets>
-      <a-assets>
-          <video muted id="vid" src="video/video2 new.mp4"
-          crossOrigin="anonymous"
-          autoplay="false"
-          loop="true"
-          style="display: none"></video>
-      </a-assets>
-      <a-assets>
-        <img id="SGLogo" src="img/logo-SG.png">
-        <img id="TeamName" src="img/cognitiveSquad.png">
-      </a-assets>
-      <a-entity camera look-controls>
-          <a-entity id="cursor_Id"cursor="fuse: false; fuseTimeout: 500"
-                    position="0 0 -1"
-                    geometry="primitive: ring; radiusInner: 0.000001; radiusOuter: 0.01"
-                    material="color: white; shader: flat">
-          </a-entity>
-        </a-entity>
-    <a-box id="ent_box1" template='src: #box1' visible='false' box1listner></a-box>
-    <a-box id="ent_box2" template='src: #box2' visible='false' box2listner></a-box>
-    <a-box id="ent_box3" template='src: #box3' visible='false' box3listner></a-box>
-    <a-box id="ent_box4" template='src: #box4' visible='false' box4listner></a-box>
-    <a-box id="ent_box5" template='src: #box5' visible='false' box5listner></a-box>
-    <a-entity id="ent_box0"template='src: #box0' visible='false' box0listner></a-entity>
-    <a-entity id="ent_scene3_0"template='src: #scene3_0' visible='false' ></a-entity>
-    <a-entity id="ent_scene3_1"template='src: #scene3_1' visible='false' ></a-entity>
-    <a-entity id="ent_scene3_2"template='src: #scene3_2' visible='false' ></a-entity>
-    <a-entity id="ent_scene3_3"template='src: #scene3_3' visible='false' ></a-entity>
-    <a-entity id="ent_scene3_4"template='src: #scene3_4' visible='false' ></a-entity>
-    <a-entity id="ent_scene3_5"template='src: #scene3_5' visible='false' ></a-entity>
 
-    <a-text id="id_text1" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="15 9 -3" rotation="0 -90 0" scale="5 5 5" color="#FF8C00">
-                <a-animation attribute="position" from="15 4 -3" to="15 7 -3" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
-                <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
-                </a-text>
+		</a-assets>
+		<a-assets>
+			<video muted id="vid" src="video/video2 new.mp4" crossOrigin="anonymous" autoplay="false" loop="true"
+				style="display: none"></video>
+		</a-assets>
+		<a-assets>
+			<img id="SGLogo" src="img/logo-SG.png">
+			<img id="TeamName" src="img/cognitiveSquad.png">
+		</a-assets>
+		<a-entity camera look-controls>
+			<a-entity id="cursor_Id" cursor="fuse: false; fuseTimeout: 500" position="0 0 -1"
+				geometry="primitive: ring; radiusInner: 0.000001; radiusOuter: 0.01"
+				material="color: white; shader: flat">
+			</a-entity>
+		</a-entity>
+		<a-box id="ent_box1" template='src: #box1' visible='false' box1listner></a-box>
+		<a-box id="ent_box2" template='src: #box2' visible='false' box2listner></a-box>
+		<a-box id="ent_box3" template='src: #box3' visible='false' box3listner></a-box>
+		<a-box id="ent_box4" template='src: #box4' visible='false' box4listner></a-box>
+		<a-box id="ent_box5" template='src: #box5' visible='false' box5listner></a-box>
+		<a-entity id="ent_box0" template='src: #box0' visible='false' box0listner></a-entity>
+		<a-entity id="ent_scene3_0" template='src: #scene3_0' visible='false'></a-entity>
+		<a-entity id="ent_scene3_1" template='src: #scene3_1' visible='false'></a-entity>
+		<a-entity id="ent_scene3_2" template='src: #scene3_2' visible='false'></a-entity>
+		<a-entity id="ent_scene3_3" template='src: #scene3_3' visible='false'></a-entity>
+		<a-entity id="ent_scene3_4" template='src: #scene3_4' visible='false'></a-entity>
+		<a-entity id="ent_scene3_5" template='src: #scene3_5' visible='false'></a-entity>
 
-    <a-text id="id_text2" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="-3 9 -15" rotation="0 0 0" scale="5 5 5" color="#FF8C00" >
-                <a-animation attribute="position" from="-3 4 -15" to="-3 7 -15" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
-                <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation></a-text>
+		<a-text id="id_text1" visible="false" value=""
+			font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
+			position="15 9 -3" rotation="0 -90 0" scale="5 5 5" color="#FF8C00">
+			<a-animation attribute="position" from="15 4 -3" to="15 7 -3" direction="alternate" dur="4000"
+				repeat="indefinite"></a-animation>
+			<a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite">
+			</a-animation>
+		</a-text>
 
-    <a-text id="id_text3" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="-15 9 3" rotation="0 90 0" scale="5 5 5" color="#FF8C00">
-                <a-animation attribute="position" from="-15 4 3" to="-15 7 3" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
-                <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
-                </a-text>
+		<a-text id="id_text2" visible="false" value=""
+			font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
+			position="-3 9 -15" rotation="0 0 0" scale="5 5 5" color="#FF8C00">
+			<a-animation attribute="position" from="-3 4 -15" to="-3 7 -15" direction="alternate" dur="4000"
+				repeat="indefinite"></a-animation>
+			<a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite">
+			</a-animation>
+		</a-text>
 
-    <a-text id="id_text4" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="-20 9 -15" rotation="0 45 0" scale="5 5 5" color="#FF8C00">
-                <a-animation attribute="position" from="-20 4 -15" to="-20 9 -15" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
-                <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
-                </a-text>
+		<a-text id="id_text3" visible="false" value=""
+			font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
+			position="-15 9 3" rotation="0 90 0" scale="5 5 5" color="#FF8C00">
+			<a-animation attribute="position" from="-15 4 3" to="-15 7 3" direction="alternate" dur="4000"
+				repeat="indefinite"></a-animation>
+			<a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite">
+			</a-animation>
+		</a-text>
 
-    <a-text id="id_text5" visible="false" value="" font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508" position="12 9 -15" rotation="0 -45 0" scale="5 5 5" color="#FF8C00">
-                <a-animation attribute="position" from="12 7 -15" to="12 11 -15" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
-                <a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
-                </a-text>
+		<a-text id="id_text4" visible="false" value=""
+			font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
+			position="-20 9 -15" rotation="0 45 0" scale="5 5 5" color="#FF8C00">
+			<a-animation attribute="position" from="-20 4 -15" to="-20 9 -15" direction="alternate" dur="4000"
+				repeat="indefinite"></a-animation>
+			<a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite">
+			</a-animation>
+		</a-text>
+
+		<a-text id="id_text5" visible="false" value=""
+			font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
+			position="12 9 -15" rotation="0 -45 0" scale="5 5 5" color="#FF8C00">
+			<a-animation attribute="position" from="12 7 -15" to="12 11 -15" direction="alternate" dur="4000"
+				repeat="indefinite"></a-animation>
+			<a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite">
+			</a-animation>
+		</a-text>
 
 
-    <a-box id="ent_text3" template='src: #text3' visible='false' text3listner></a-box>
-    <a-box id="ent_text4" template='src: #text4' visible='false' text4listner></a-box>
-    <a-box id="ent_text5" template='src: #text5' visible='false' text5listner></a-box>
-    <a-entity id="ent_thankyou" template='src: #thankyou' visible='false' ></a-entity>
-    <a-image id ="logo" src="#SGLogo" position="30 18 -30" scale="15 15 15" rotation="0 0 0" width="0.5" height="0.40"></a-image> 
-    <a-image id ="TN" src="#TeamName" position="30 -18 -30" scale="15 15 15" rotation="0 0 0" width="0.5" height="0.30"></a-image> 
-    <a-image id="back" src="img/back_button.png" width="6" height="3" position="0 -18 -30" rotation="-25 0 0" visible="false" control-goback></a-image>
-    <a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20" rotation="-25 0 0" visible="false" control-complete></a-image>
-    <a-video id="ent_vid" geometry="primitive: sphere;
+		<a-box id="ent_text3" template='src: #text3' visible='false' text3listner></a-box>
+		<a-box id="ent_text4" template='src: #text4' visible='false' text4listner></a-box>
+		<a-box id="ent_text5" template='src: #text5' visible='false' text5listner></a-box>
+		<a-entity id="ent_thankyou" template='src: #thankyou' visible='false' go-reTour></a-entity>
+		<a-image id="start" src="img/start.png" position="0 -1 -40" scale="15 15 15" rotation="0 0 0" width="1.5"
+			height="0.5" start-tour></a-image>
+		<a-image id="logo" src="#SGLogo" position="30 18 -30" scale="15 15 15" rotation="0 0 0" width="0.5"
+			height="0.40"></a-image>
+		<a-image id="TN" src="#TeamName" position="30 -18 -30" scale="15 15 15" rotation="0 0 0" width="0.5"
+			height="0.7"></a-image>
+		<a-image id="back" src="img/back_button.png" width="6" height="3" position="0 -18 -30" rotation="-25 0 0"
+			visible="false" control-goback></a-image>
+		<a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20"
+			rotation="-25 0 0" visible="false" control-complete></a-image>
+		<a-video id="ent_vid" geometry="primitive: sphere;
       radius: 5000;
       segmentsWidth: 64;
-      segmentsHeight: 64;"
-      material="shader: flat; src: #vid;"
-      scale="-1 1 1"
-      visible="true"
-      rotation="0 -50 0">
-    </a-video>  
-	<audio id="aud" src=""></audio>
-    
-    </a-scene>
-    <script type="text/javascript">
-		var vid = document.getElementById('vid');
-		var var_box0 = document.getElementById("ent_box0");
-		var var_box1 = document.getElementById("ent_box1");
-		var var_box2 = document.getElementById("ent_box2");
-		var var_box3 = document.getElementById("ent_box3");
-		var var_box4 = document.getElementById("ent_box4");
-		var var_box5 = document.getElementById("ent_box5");
-		var var_text1 = document.getElementById("id_text1");
-		var var_text2 = document.getElementById("id_text2");
-		var var_text3 = document.getElementById("id_text3");
-		var var_text4 = document.getElementById("id_text4");
-		var var_text5 = document.getElementById("id_text5");
-		var var_logo = document.getElementById("logo");
-		var var_TN = document.getElementById("TN");
-		var var_complete = document.getElementById("complete");
-		var ent_aud = document.getElementById('aud');
-		var dealy = 48000;
-		setTimeout(function () {
-		ent_aud.setAttribute('src', 'audio/introduction.m4a');
-		ent_aud.play()
-		}, 3000);
-		setTimeout(function () {
-		vid.play();
-		}, 27000);
-		setTimeout(function () {
-		vid.setAttribute('src', 'video/video1.mp4');
-		vid.play();
-		var_logo.setAttribute('visible', 'false');
-		var_TN.setAttribute('visible', 'false');
-		}, dealy);
-		setTimeout(function () {
-		var_box1.setAttribute('visible', 'true');
-		var_text1.setAttribute('value', '1. Managed\n2. Adversory\n3. Execution');
-		var_box3.setAttribute('visible', 'true');
-		var_text3.setAttribute('value', '1. Art Advisory\n2. Philanthropy');
-		}, dealy + 1000);
-		setTimeout(function () {
-		var_box4.setAttribute('visible', 'true');
-		var_text4.setAttribute('value', '1. Strategic Option\n2. Investment Opportunities\n3. Assets accepted as security\n4. Flexibility Of  Theme');
-		var_box5.setAttribute('visible', 'true');
-		var_text5.setAttribute('value', '1. Line1\n2. Line 2');
-		}, dealy + 2000);
-		setTimeout(function () {
-		var_box2.setAttribute('visible', 'true');
-		var_box0.setAttribute('visible', 'true');
-		var_text2.setAttribute('value', '1. Products Offerings\n2. Service Offerings');
-		var_complete.setAttribute('visible', 'true');
-		ent_aud.setAttribute('src', 'audio/insidewaterguide.m4a');
-		ent_aud.play()
-		}, dealy + 3000);
-	</script>
-    <!--  box1 right last
+      segmentsHeight: 64;" material="shader: flat; src: #vid;" scale="-1 1 1" visible="true" rotation="0 -50 0">
+		</a-video>
+		<audio id="aud" src=""></audio>
+
+	</a-scene>
+	<!--  box1 right last
           box5 right middle
           box2 middle
           box3 left last
           box4 left middle -->
-  </body>
+</body>

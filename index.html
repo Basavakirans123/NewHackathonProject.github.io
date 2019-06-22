@@ -29,7 +29,7 @@
 				var var_TN = document.getElementById("TN");
 				var var_complete = document.getElementById("complete");
 				var var_aud = document.getElementById('aud');
-				var dealy = 48000;
+				var dealy = 000;
 				this.el.addEventListener('click', function (evt) {
 					setTimeout(function () {
 						var_aud.setAttribute('src', 'audio/introduction.m4a');
@@ -522,7 +522,8 @@
 			<script id="scene3_3" type="text/x-nunjucks-template">
                 <a-image src="img\Art\art1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image>
-                <a-sky src="img\Art\art_sky.png"></a-sky>
+					
+				<a-sky src="img\Art\art_sky.png"></a-sky>
             </script>
 			<script id="scene3_4" type="text/x-nunjucks-template">
                 <a-image src="img\CorporateSolutions\corporateSolutions1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
@@ -556,7 +557,7 @@
 			<img id="TeamName" src="img/cognitiveSquad.png">
 		</a-assets>
 		<a-entity camera look-controls>
-			<a-entity id="cursor_Id" cursor="fuse: true; fuseTimeout: 5000" position="0 0 -1"
+			<a-entity id="cursor_Id" cursor="fuse: false; fuseTimeout: 500" position="0 0 -1"
 				geometry="primitive: ring; radiusInner: 0.000001; radiusOuter: 0.01"
 				material="color: white; shader: flat">
 			</a-entity>

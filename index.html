@@ -29,7 +29,7 @@
 				var var_TN = document.getElementById("TN");
 				var var_complete = document.getElementById("complete");
 				var var_aud = document.getElementById('aud');
-				var dealy = 000;
+				var dealy = 48000;
 				this.el.addEventListener('click', function (evt) {
 					setTimeout(function () {
 						var_aud.setAttribute('src', 'audio/introduction.m4a');
@@ -522,6 +522,8 @@
 			<script id="scene3_3" type="text/x-nunjucks-template">
                 <a-image src="img\Art\art1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image>
+				<a-image src="img\Art\Jelly.png" position="0 -25 -30" scale="10 10 10" rotation="0 0 0" width="4" height="2.6">
+					<a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image>
 					
 				<a-sky src="img\Art\art_sky.png"></a-sky>
             </script>

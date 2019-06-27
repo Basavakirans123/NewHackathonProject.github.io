@@ -512,22 +512,46 @@
                     <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
                 <a-image src="img\InvestmentSolutions\invs33.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
                     <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
-                <a-sky src="img\InvestmentSolutions\Invest_sky.png"></a-sky>
+                <a-sky src="img\InvestmentSolutions\Invest_sky1.jpg"></a-sky>
             </script>
 			<script id="scene3_2" type="text/x-nunjucks-template">
-                <a-image src="img\wealthPlanning\wealthplanning1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image> 
-                <a-sky src="img\wealthPlanning\wealth_sky.png"></a-sky>
+				<a-image src="img\wealthPlanning\wealthplanning1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image> 
+				<a-sky src="img\wealthPlanning\wealth_sky1.png"></a-sky>
             </script>
 			<script id="scene3_3" type="text/x-nunjucks-template">
-                <a-image src="img\Art\art1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image>	
-				<a-sky src="img\Art\art_sky.png"></a-sky>
+				<a-image src="img\Art\fish1.png" scale="15 15 15">
+				<a-animation attribute="position" 
+					dur="9000" 
+					from="-80 20 -40" 
+					to="100 14 -40" 
+					repeat="indefinite">
+				</a-animation>
+				</a-image>
+				<a-image src="img\Art\fish2.png" scale="15 15 15">
+						<a-animation attribute="position" 
+							dur="9000" 
+							from="100 -2 -40" 
+							to="-80 -2 -40"  
+							repeat="indefinite">
+						</a-animation>
+						</a-image>
+				<a-image src="img\Art\art1.png" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+                <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image>	
+				<a-sky src="img\Art\art_sky1.jpg"></a-sky>
             </script>
 			<script id="scene3_4" type="text/x-nunjucks-template">
-                <a-image src="img\CorporateSolutions\corporateSolutions1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+				<a-image src="img\CorporateSolutions\fish.png" scale="25 25 25">
+						<a-animation attribute="position" 
+							dur="7000" 
+							from="-80 20 -40" 
+							to="100 14 -40" 
+							repeat="indefinite">
+						</a-animation>
+						</a-image>
+				<a-image src="img\CorporateSolutions\corporateSolutions1.png" position="0 5 -30" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="7000" repeat="indefinite"></a-animation></a-image>
-                <a-sky src="img\CorporateSolutions\corp_sky.png"></a-sky>
+                <a-sky src="img\CorporateSolutions\corp_sky1.jpg"></a-sky>
             </script>
 			<script id="scene3_5" type="text/x-nunjucks-template">
                 <a-image src="img\finance\financ33.png" position="0 5 -35" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
@@ -536,12 +560,12 @@
                     <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
                 <a-image src="img\finance\financ22.png" position="30 5 -25" scale="15 15 15" rotation="0 -30 0" width="4" height="2.6">
                     <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>           
-                <a-sky src="img\finance\finance_sky.png"></a-sky>
+                <a-sky src="img\finance\finance_sky1.jpg"></a-sky>
             </script>
 			<script id="thankyou" type="text/x-nunjucks-template">
-				<image id="Thanks"  src="img\wealthPlanning\ThankYou2.png" width="100" height="75" position="0 6 -90" ></image>
-				<a-image id="retour" src="img\retour.png" width="6" height="1" scale="2 2 2" position="8 -15 -10" rotation="0 0 0"></a-image>        
-                <a-sky src="#Thanks"></a-sky>
+				<image id="Thanks"  src="img\wealthPlanning\ThankYou2.jpg" width="100" height="75" position="0 6 -90" ></image>
+				<a-image id="retour" src="img\retour.png" width="6" height="1" scale="2 2 2" position="30 6 -25" rotation="0 -30 0"></a-image>
+				<a-sky src="#Thanks"></a-sky>
             </script>
 
 
@@ -556,7 +580,7 @@
 			<img id="TeamName" src="img/cognitiveSquad.png">
 		</a-assets>
 		<a-entity camera look-controls>
-			<a-entity id="cursor_Id" cursor="fuse: false; fuseTimeout: 500" position="0 0 -1"
+			<a-entity id="cursor_Id" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1"
 				geometry="primitive: ring; radiusInner: 0.000001; radiusOuter: 0.01"
 				material="color: white; shader: flat">
 			</a-entity>
@@ -648,5 +672,7 @@
           box5 right middle
           box2 middle
           box3 left last
-          box4 left middle -->
+		  box4 left middle --
+		  
+		 direction="alternate" >
 </body>

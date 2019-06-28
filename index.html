@@ -37,7 +37,7 @@
 					}, 1000);
 					setTimeout(function () {
 						vid.play();
-					}, 22000);
+					}, 00000);
 					setTimeout(function () {
 						vid.setAttribute('src', 'video/video1.mp4');
 						vid.play();
@@ -572,7 +572,7 @@
 
 		</a-assets>
 		<a-assets>
-			<video muted id="vid" src="video/video5 new1.mp4" crossOrigin="anonymous" autoplay="false" loop="true" preload="auto" autoplay loop crossorigin webkit-playsinline
+			<video muted id="vid" src="video/video5 new1.mp4" crossOrigin="anonymous" autoplay="false" loop="false"
 				style="display: none"></video>
 		</a-assets>
 		<a-assets>
@@ -585,7 +585,7 @@
 				material="color: white; shader: flat">
 			</a-entity>
 		</a-entity>
-		<audio id="aud" sound ="src: ;autoplay:ture"></audio>
+		<audio id="aud" sound ="src: ;autoplay:true"></audio>
 		<a-box id="ent_box1" template='src: #box1' visible='false' box1listner></a-box>
 		<a-box id="ent_box2" template='src: #box2' visible='false' box2listner></a-box>
 		<a-box id="ent_box3" template='src: #box3' visible='false' box3listner></a-box>
@@ -660,11 +660,9 @@
 			visible="false" control-goback></a-image>
 		<a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20"
 			rotation="-25 0 0" visible="false" control-complete></a-image>
-		<a-videosphere id="ent_vid" geometry="primitive: sphere;
-      radius: 5000;
-      segmentsWidth: 64;
-      segmentsHeight: 64;" material="shader: flat; src: #vid;" scale="-1 1 1" visible="true" rotation="0 -50 0">
-		</videosphere>
+		<a-video id="ent_vid" geometry="primitive: sphere;radius: 5000;segmentsWidth: 64;segmentsHeight: 64;" 
+			material="shader: flat; src: #vid;" scale="-1 1 1" visible="true" rotation="0 -50 0">
+		</a-video>
 		
 
 	</a-scene>

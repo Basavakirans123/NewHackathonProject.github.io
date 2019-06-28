@@ -34,10 +34,11 @@
 					setTimeout(function () {
 						var_aud.setAttribute('src', 'audio/introduction.m4a');
 						var_aud.play();
-					}, 1000);
-					setTimeout(function () {
 						vid.play();
-					}, 22000);
+					}, 1000);
+					/*setTimeout(function () {
+						vid.play();
+					}, 22000);*/
 					setTimeout(function () {
 						vid.setAttribute('src', 'video/video1.mp4');
 						vid.play();
@@ -572,7 +573,7 @@
 
 		</a-assets>
 		<a-assets>
-			<video muted id="vid" src="video/video5 new1.mp4" crossOrigin="anonymous" autoplay="true" loop="false"
+			<video muted id="vid" src="video/video5 new1.mp4" crossOrigin="anonymous" autoplay="false" loop="false"
 				style="display: none"></video>
 		</a-assets>
 		<a-assets>

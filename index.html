@@ -13,7 +13,7 @@
 	<script type="text/javascript">
 	AFRAME.registerComponent('start-tour', {
 			init: function () {
-				var vid = document.getElementById('vid');
+				var vid = document.getElementById("ent_vid");
 				var var_welcome = document.getElementById("ent_welcome");
 				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_box0 = document.getElementById("ent_box0");
@@ -36,19 +36,17 @@
 					setTimeout(function () {
 						var_aud.setAttribute('src', 'audio/introduction.m4a');
 						var_aud.play();
-						/*vid.play();*/
 					}, 1000);
 					/*setTimeout(function () {
-						vid.setAttribute('visible', 'true');
-						/*vid.play();
+						vid.play();
 					}, 22000);*/
 					setTimeout(function () {
 						var_welcome.setAttribute('visible', 'false');
 						var_welcome2.setAttribute('visible', 'true');			
 					}, 25000);
 					setTimeout(function () {
-						vid.setAttribute('visible', 'true');
-						/*vid.setAttribute('src', 'video/video1.mp4');*/
+						vid.setAttribute('visible', 'true')
+						vid.setAttribute('src', 'video/video1.mp4');
 						vid.play();
 						var_welcome.setAttribute('visible', 'false');
 						var_welcome2.setAttribute('visible', 'false');
@@ -625,13 +623,15 @@
 		</a-assets>
 		<a-entity id="ent_welcome" template='src: #welcome' visible='true'></a-entity>
 		<a-entity id="ent_welcome2" template='src: #welcome2' visible='false'></a-entity>
+		<!--a-assets>
+			<video muted id="vid" src="video/video5 new1.mp4" crossOrigin="anonymous" autoplay="false" loop="true"
+				style="display: none"></video>
+		</a-assets-->
 		
 		<a-assets>
-			<video id="vid" src="video/video1.mp4" crossOrigin="anonymous" autoplay="false" loop="false"
+			<video  id="vid" src="video/video1.mp4" crossOrigin="anonymous" autoplay="false" loop="true"
 				style="display: none"></video>
-			<!--video/video5 new1.mp4-->
 		</a-assets>
-	
 		<a-assets>
 			<img id="SGLogo" src="img/logo-SG.png">
 			<img id="TeamName" src="img/cognitiveSquad.png">
@@ -704,7 +704,7 @@
 			</a-animation-->
 		</a-text>
 
-		<a-text id="id_textThankYou" visible="false" value="Thank You"
+		<a-text id="id_textThankYou" visible="false" value=" End of Tour\n Thank You\n Merci"
 			font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
 			position="12 10 -15" rotation="0 -45 0" scale="5 5 5" color="#ffffff">
 			

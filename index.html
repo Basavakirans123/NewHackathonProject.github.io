@@ -13,7 +13,7 @@
 	<script type="text/javascript">
 	AFRAME.registerComponent('start-tour', {
 			init: function () {
-				var vid = document.getElementById('ent_vid');
+				var vid = document.getElementById('vid');
 				var var_welcome = document.getElementById("ent_welcome");
 				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_box0 = document.getElementById("ent_box0");
@@ -48,7 +48,7 @@
 					}, 25000);
 					setTimeout(function () {
 						vid.setAttribute('visible', 'true');
-						vid.setAttribute('src', 'video/video1.mp4');
+						/*vid.setAttribute('src', 'video/video1.mp4');*/
 						vid.play();
 						var_welcome.setAttribute('visible', 'false');
 						var_welcome2.setAttribute('visible', 'false');
@@ -459,6 +459,7 @@
 				var var_text3 = document.getElementById("id_text3");
 				var var_text4 = document.getElementById("id_text4");
 				var var_text5 = document.getElementById("id_text5");
+				var var_textThankYou = document.getElementById("id_textThankYou");
 				var var_back = document.getElementById("back");
 				var var_thankyou = document.getElementById("ent_thankyou");
 				var var_aud = document.getElementById("aud");
@@ -484,6 +485,7 @@
 					var_text3.setAttribute('value', '');
 					var_text4.setAttribute('value', '');
 					var_text5.setAttribute('value', '');
+					var_textThankYou.setAttribute('visible','true');
 					var_back.setAttribute('visible', 'false');
 					var_thankyou.setAttribute('visible', 'true');
 					var_aud.setAttribute('src', 'audio/endline.m4a');
@@ -700,6 +702,12 @@
 				repeat="indefinite"></a-animation>
 			<a-animation attribute="scale" from="4 4 4" to="6 6 6" direction="alternate" dur="4000" repeat="indefinite">
 			</a-animation-->
+		</a-text>
+
+		<a-text id="id_textThankYou" visible="false" value="Thank You"
+			font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
+			position="12 10 -15" rotation="0 -45 0" scale="5 5 5" color="#ffffff">
+			
 		</a-text>
 
 

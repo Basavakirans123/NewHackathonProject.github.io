@@ -625,10 +625,11 @@
 		</a-assets>
 		<a-entity id="ent_welcome" template='src: #welcome' visible='true'></a-entity>
 		<a-entity id="ent_welcome2" template='src: #welcome2' visible='false'></a-entity>
-		<!----a-assets>
-			<video id="vid" src="video/video5 new1.mp4" crossOrigin="anonymous" autoplay="false" loop="false"
+		<a-assets>
+			<video id="vid" src="" crossOrigin="anonymous" autoplay="false" loop="false"
 				style="display: none"></video>
-		</a-assets-->
+				<!--video/video5 new1.mp4-->
+		</a-assets>
 		<a-assets>
 			<img id="SGLogo" src="img/logo-SG.png">
 			<img id="TeamName" src="img/cognitiveSquad.png">
@@ -716,7 +717,7 @@
 			rotation="-25 0 0" visible="false" control-complete></a-image>
 	
 		<a-video id="ent_vid" geometry="primitive: sphere;radius: 5000;segmentsWidth: 64;segmentsHeight: 64;" 
-			material="shader: flat; src: ;" scale="-1 1 1" visible="false" rotation="0 -50 0">
+			material="shader: flat; src: vid;" scale="-1 1 1" visible="false" rotation="0 -50 0">
 		</a-video>
 		
 

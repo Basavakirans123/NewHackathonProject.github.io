@@ -13,7 +13,9 @@
 	<script type="text/javascript">
 	AFRAME.registerComponent('start-tour', {
 			init: function () {
-				var vid = document.getElementById('vid');
+				var vid = document.getElementById('ent_vid');
+				var var_welcome = document.getElementById("ent_welcome");
+				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_box0 = document.getElementById("ent_box0");
 				var var_box1 = document.getElementById("ent_box1");
 				var var_box2 = document.getElementById("ent_box2");
@@ -31,20 +33,30 @@
 				var var_aud = document.getElementById('aud');
 				var dealy = 48000;
 				this.el.addEventListener('click', function (evt) {
+					
+					
 					setTimeout(function () {
 						var_aud.setAttribute('src', 'audio/introduction.m4a');
 						var_aud.play();
-						vid.play();
+						/*vid.play();*/
 					}, 1000);
 					/*setTimeout(function () {
-						vid.play();
+						vid.setAttribute('visible', 'true');
+						/*vid.play();
 					}, 22000);*/
 					setTimeout(function () {
+						var_welcome.setAttribute('visible', 'false');
+						var_welcome2.setAttribute('visible', 'true');			
+					}, 25000);
+					setTimeout(function () {
+						vid.setAttribute('visible', 'true');
 						vid.setAttribute('src', 'video/video1.mp4');
 						vid.play();
+						var_welcome.setAttribute('visible', 'false');
+						var_welcome2.setAttribute('visible', 'false');
 						var_logo.setAttribute('visible', 'false');
 						var_TN.setAttribute('visible', 'false');
-					}, dealy);
+					}, 45000);
 					setTimeout(function () {
 						var_box1.setAttribute('visible', 'true');
 						var_text1.setAttribute('value', 'Managed\n Advisory\n Execution');
@@ -78,6 +90,8 @@
 		});
 		AFRAME.registerComponent('box0listner', {
 			init: function () {
+				var var_welcome = document.getElementById("ent_welcome");
+				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_text1 = document.getElementById("id_text1");
 				var var_text2 = document.getElementById("id_text2");
 				var var_text3 = document.getElementById("id_text3");
@@ -101,6 +115,7 @@
 				});
 				this.el.addEventListener('click', function (evt) {
 					var_scene3_0.setAttribute('visible', 'true');
+					var_welcome.setAttribute('visible', 'false');
 					var_back.setAttribute('visible', 'true');
 					vid.setAttribute('visible', 'false');
 					var_box1.setAttribute('visible', 'false');
@@ -124,6 +139,8 @@
 		});
 		AFRAME.registerComponent('box1listner', {
 			init: function () {
+				var var_welcome = document.getElementById("ent_welcome");
+				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_text1 = document.getElementById("id_text1");
 				var var_text2 = document.getElementById("id_text2");
 				var var_text3 = document.getElementById("id_text3");
@@ -147,6 +164,8 @@
 				});
 				this.el.addEventListener('click', function (evt) {
 					var_scene3_1.setAttribute('visible', 'true');
+					var_welcome.setAttribute('visible', 'false');
+					var_welcome2.setAttribute('visible', 'false');
 					var_back.setAttribute('visible', 'true');
 					vid.setAttribute('visible', 'false');
 					var_box0.setAttribute('visible', 'false');
@@ -170,6 +189,8 @@
 		});
 		AFRAME.registerComponent('box2listner', {
 			init: function () {
+				var var_welcome = document.getElementById("ent_welcome");
+				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_scene3_2 = document.getElementById("ent_scene3_2");
 				var vid = document.getElementById('ent_vid');
 				var var_back = document.getElementById('back');
@@ -193,6 +214,8 @@
 				});
 				this.el.addEventListener('click', function (evt) {
 					var_scene3_2.setAttribute('visible', 'true');
+					var_welcome.setAttribute('visible', 'false');
+					var_welcome2.setAttribute('visible', 'false');
 					var_back.setAttribute('visible', 'true');
 					var_back.setAttribute('position', '0 -18 -30');
 					vid.setAttribute('visible', 'false');
@@ -215,6 +238,8 @@
 		});
 		AFRAME.registerComponent('box3listner', {
 			init: function () {
+				var var_welcome = document.getElementById("ent_welcome");
+				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_text1 = document.getElementById("id_text1");
 				var var_text2 = document.getElementById("id_text2");
 				var var_text3 = document.getElementById("id_text3");
@@ -238,6 +263,8 @@
 				});
 				this.el.addEventListener('click', function (evt) {
 					var_scene3_3.setAttribute('visible', 'true');
+					var_welcome.setAttribute('visible', 'false');
+					var_welcome2.setAttribute('visible', 'false');
 					var_back.setAttribute('visible', 'true');
 					var_back.setAttribute('position', '0 -18 -30');
 					vid.setAttribute('visible', 'false');
@@ -262,6 +289,8 @@
 		});
 		AFRAME.registerComponent('box4listner', {
 			init: function () {
+				var var_welcome = document.getElementById("ent_welcome");
+				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_text1 = document.getElementById("id_text1");
 				var var_text2 = document.getElementById("id_text2");
 				var var_text3 = document.getElementById("id_text3");
@@ -286,6 +315,8 @@
 				this.el.addEventListener('click', function (evt) {
 					var_scene3_4.setAttribute('visible', 'true');
 					var_back.setAttribute('visible', 'true');
+					var_welcome.setAttribute('visible', 'false');
+					var_welcome2.setAttribute('visible', 'false');
 					vid.setAttribute('visible', 'false');
 					var_box0.setAttribute('visible', 'false');
 					var_box2.setAttribute('visible', 'false');
@@ -308,6 +339,8 @@
 		});
 		AFRAME.registerComponent('box5listner', {
 			init: function () {
+				var var_welcome = document.getElementById("ent_welcome");
+				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_text1 = document.getElementById("id_text1");
 				var var_text2 = document.getElementById("id_text2");
 				var var_text3 = document.getElementById("id_text3");
@@ -331,6 +364,8 @@
 				});
 				this.el.addEventListener('click', function (evt) {
 					var_scene3_5.setAttribute('visible', 'true');
+					var_welcome.setAttribute('visible', 'false');
+					var_welcome2.setAttribute('visible', 'false');
 					var_back.setAttribute('visible', 'true');
 					var_back.setAttribute('position', '0 -18 -30');
 					vid.setAttribute('visible', 'false');
@@ -356,6 +391,8 @@
 		AFRAME.registerComponent('control-goback', {
 			init: function () {
 				var vid = document.getElementById('ent_vid');
+				var var_welcome = document.getElementById("ent_welcome");
+				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_scene3_0 = document.getElementById("ent_scene3_0");
 				var var_scene3_1 = document.getElementById("ent_scene3_1");
 				var var_scene3_2 = document.getElementById("ent_scene3_2");
@@ -377,6 +414,8 @@
 				var var_aud = document.getElementById("aud");
 				this.el.addEventListener('click', function (evt) {
 					this.setAttribute('visible', 'false');
+					var_welcome.setAttribute('visible', 'false');
+					var_welcome2.setAttribute('visible', 'false');
 					var_box0.setAttribute('visible', 'true');
 					var_box1.setAttribute('visible', 'true');
 					vid.setAttribute('visible', 'true');
@@ -403,6 +442,8 @@
 		AFRAME.registerComponent('control-complete', {
 			init: function () {
 				var vid = document.getElementById('ent_vid');
+				var var_welcome = document.getElementById("ent_welcome");
+				var var_welcome2 = document.getElementById("ent_welcome2");
 				var var_scene3_0 = document.getElementById("ent_scene3_0");
 				var var_scene3_1 = document.getElementById("ent_scene3_1");
 				var var_scene3_2 = document.getElementById("ent_scene3_2");
@@ -425,6 +466,8 @@
 				var var_aud = document.getElementById("aud");
 				this.el.addEventListener('click', function (evt) {
 					this.setAttribute('visible', 'false');
+					var_welcome.setAttribute('visible', 'false');
+					var_welcome2.setAttribute('visible', 'false');
 					var_box0.setAttribute('visible', 'false');
 					var_box1.setAttribute('visible', 'false');
 					vid.setAttribute('visible', 'false');
@@ -453,6 +496,14 @@
 	</script>
 	<a-scene>
 		<a-assets>
+			<script id="welcome" type="text/x-nunjucks-template">	
+				<image id="First"  src="img/first.jpg" ></image>
+					<a-sky src="#First"> </a-sky>	
+			</script>
+			<script id="welcome2" type="text/x-nunjucks-template">	
+				<image id="Second"  src="img/second.jpg" ></image>
+					<a-sky src="#Second"> </a-sky>	
+			</script>
 			<script id="box0" type="text/x-nunjucks-template">
                 <img id="boxtexture0" src="img/aboutSG.png" crossOrigin="anonymous">
                 <a-box src="#boxtexture0" position="0 75 -90" rotation="40 0 0" geometry="height:60;width:100"</a-box>
@@ -566,16 +617,18 @@
 			<script id="thankyou" type="text/x-nunjucks-template">
 				<image id="Thanks"  src="img\wealthPlanning\ThankYou2.jpg" width="100" height="75" position="0 6 -90" ></image>
 				<a-image id="retour" src="img\retour.png" width="6" height="1" scale="2 2 2" position="30 6 -25" rotation="0 -30 0"></a-image>
-				<a-sky src="#Thanks"></a-sky>
+			    <a-sky src="#Thanks"></a-sky>
             </script>
 
 
 
 		</a-assets>
-		<a-assets>
-			<video muted id="vid" src="video/video5 new1.mp4" crossOrigin="anonymous" autoplay="false" loop="false"
+		<a-entity id="ent_welcome" template='src: #welcome' visible='true'></a-entity>
+		<a-entity id="ent_welcome2" template='src: #welcome2' visible='false'></a-entity>
+		<!----a-assets>
+			<video id="vid" src="video/video5 new1.mp4" crossOrigin="anonymous" autoplay="false" loop="false"
 				style="display: none"></video>
-		</a-assets>
+		</a-assets-->
 		<a-assets>
 			<img id="SGLogo" src="img/logo-SG.png">
 			<img id="TeamName" src="img/cognitiveSquad.png">
@@ -600,7 +653,7 @@
 		<a-entity id="ent_scene3_4" template='src: #scene3_4' visible='false'></a-entity>
 		<a-entity id="ent_scene3_5" template='src: #scene3_5' visible='false'></a-entity>
 		<a-entity id="ent_thankyou" template='src: #thankyou' visible='false' box6listner></a-entity>
-
+       
 	
 		<a-text id="id_text1" visible="false" value=""
 			font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
@@ -661,8 +714,9 @@
 			visible="false" control-goback></a-image>
 		<a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20"
 			rotation="-25 0 0" visible="false" control-complete></a-image>
+	
 		<a-video id="ent_vid" geometry="primitive: sphere;radius: 5000;segmentsWidth: 64;segmentsHeight: 64;" 
-			material="shader: flat; src: #vid;" scale="-1 1 1" visible="true" rotation="0 -50 0">
+			material="shader: flat; src: ;" scale="-1 1 1" visible="false" rotation="0 -50 0">
 		</a-video>
 		
 

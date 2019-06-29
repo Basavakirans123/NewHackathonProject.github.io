@@ -50,7 +50,7 @@
 					}, 25000);
 					setTimeout(function () {
 						vid.setAttribute('visible', 'true');
-						vid.setAttribute('src', 'video/video1.mp4');
+						/*vid.setAttribute('src', 'video/video1.mp4');*/
 						vid.play();
 						var_welcome.setAttribute('visible', 'false');
 						var_welcome2.setAttribute('visible', 'false');
@@ -626,7 +626,7 @@
 		<a-entity id="ent_welcome" template='src: #welcome' visible='true'></a-entity>
 		<a-entity id="ent_welcome2" template='src: #welcome2' visible='false'></a-entity>
 		<a-assets>
-			<video id="vid" src="" crossOrigin="anonymous" autoplay="false" loop="false"
+			<video id="vid" src="video/video1.mp4" crossOrigin="anonymous" autoplay="true" loop="false"
 				style="display: none"></video>
 				<!--video/video5 new1.mp4-->
 		</a-assets>

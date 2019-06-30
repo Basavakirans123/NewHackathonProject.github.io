@@ -11,6 +11,23 @@
 
 <body>
 	<script type="text/javascript">
+	var lang = '10';
+	AFRAME.registerComponent('language_eng', {
+			init: function () {
+				this.el.addEventListener('click', function (evt) {
+					lang = 20;
+				});
+			}
+		});
+
+		AFRAME.registerComponent('language_fr', {
+			init: function () {
+				this.el.addEventListener('click', function (evt) {
+					lang = 30;
+				});
+			}
+		});
+
 	AFRAME.registerComponent('start-tour', {
 			init: function () {
 				var vid = document.getElementById("ent_vid");
@@ -29,12 +46,23 @@
 				var var_text5 = document.getElementById("id_text5");
 				var var_logo = document.getElementById("logo");
 				var var_TN = document.getElementById("TN");
+				var var_lang_en = document.getElementById("lang_en");
+				var var_lang_fr = document.getElementById("lang_fr");
 				var var_complete = document.getElementById("complete");
 				var var_aud = document.getElementById('aud');
 				var dealy = 48000;
 				this.el.addEventListener('click', function (evt) {	
 					setTimeout(function () {
-						var_aud.setAttribute('src', 'audio/introduction.m4a');
+
+					    if (lang == 20) {
+							var_aud.setAttribute('src', 'audio/introduction.m4a');
+						}
+						else if (lang == 30) {
+							var_aud.setAttribute('src', 'audio/introductionfrl.m4a');
+						}
+						else{
+							var_aud.setAttribute('src', 'audio/introduction.m4a');	
+						}
 						var_aud.play();
 					}, 1000);
 					/*setTimeout(function () {
@@ -42,7 +70,9 @@
 					}, 22000);*/
 					setTimeout(function () {
 						var_welcome.setAttribute('visible', 'false');
-						var_welcome2.setAttribute('visible', 'true');			
+						var_welcome2.setAttribute('visible', 'true');
+						var_lang_en.setAttribute('visible', 'false');
+						var_lang_fr.setAttribute('visible', 'false');			
 					}, 25000);
 					setTimeout(function () {
 						vid.setAttribute('visible', 'true');
@@ -631,11 +661,13 @@
 		</a-assets-->
 	
 		<a-assets>
-			<img id="SGLogo" src="img/logo-SG.png">
+			<img id="SGLogo" src="img/logo-SG.png">s
 			<img id="TeamName" src="img/cognitiveSquad.png">
+			<image id="langen"  src="img/English.png" ></image>
+			<image id="langfr"  src="img/French.jpg" ></a-image>
 		</a-assets>
 		<a-entity camera look-controls>
-			<a-entity id="cursor_Id" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1"
+			<a-entity id="cursor_Id" cursor="fuse: false; fuseTimeout: 1000" position="0 0 -1"
 				geometry="primitive: ring; radiusInner: 0.000001; radiusOuter: 0.01"
 				material="color: white; shader: flat">
 			</a-entity>
@@ -719,6 +751,10 @@
 		<a-box id="TN" src="#TeamName" position="58 -30 -48" scale="8 8 8" rotation="0 -38 0"></a-box>
 		<a-image id="back" src="img/back_button.png" width="6" height="3" position="0 -18 -30" rotation="-25 0 0"
 			visible="false" control-goback></a-image>
+			<a-image id="lang_en" src="#langen" width="6" height="3" position="-18 -15 -30" rotation="-25 0 0"
+			visible="true" language_eng></a-image>
+		<a-image id="lang_fr" src="#langfr" width="6" height="3" position="-10 -15 -30" rotation="-25 0 0"
+			visible="true" language_fr></a-image>
 		<a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20"
 			rotation="-25 0 0" visible="false" control-complete></a-image>
 	

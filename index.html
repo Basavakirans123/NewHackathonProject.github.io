@@ -45,8 +45,8 @@
 						var_welcome2.setAttribute('visible', 'true');			
 					}, 25000);
 					setTimeout(function () {
-						vid.setAttribute('visible', 'true')
-						vid.setAttribute('src', 'video/video1.mp4');
+						vid.setAttribute('visible', 'true');
+						/*vid.setAttribute('src', 'video/video1.mp4');*/
 						vid.play();
 						var_welcome.setAttribute('visible', 'false');
 						var_welcome2.setAttribute('visible', 'false');
@@ -618,20 +618,18 @@
 			    <a-sky src="#Thanks"></a-sky>
             </script>
 
-
-
 		</a-assets>
 		<a-entity id="ent_welcome" template='src: #welcome' visible='true'></a-entity>
 		<a-entity id="ent_welcome2" template='src: #welcome2' visible='false'></a-entity>
-		<!--a-assets>
+		<!----a-assets>
 			<video muted id="vid" src="video/video5 new1.mp4" crossOrigin="anonymous" autoplay="false" loop="true"
 				style="display: none"></video>
 		</a-assets-->
-		
-		<a-assets>
-			<video  id="vid" src="video/video1.mp4" crossOrigin="anonymous" autoplay="false" loop="true"
-				style="display: none"></video>
-		</a-assets>
+		<!----a-assets>
+			<video id="vid" src="video/video1.mp4" crossOrigin="anonymous" autoplay="false" loop="true"
+				style="display: none" ></video>
+		</a-assets-->
+	
 		<a-assets>
 			<img id="SGLogo" src="img/logo-SG.png">
 			<img id="TeamName" src="img/cognitiveSquad.png">
@@ -724,10 +722,10 @@
 		<a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20"
 			rotation="-25 0 0" visible="false" control-complete></a-image>
 	
-		<a-video id="ent_vid" geometry="primitive: sphere;radius: 5000;segmentsWidth: 64;segmentsHeight: 64;" 
-			material="shader: flat; src: #vid;" scale="-1 1 1" visible="false" rotation="0 -50 0">
-		</a-video>
 		
+		<a-video id="ent_vid"  geometry="primitive: sphere;radius: 5000;segmentsWidth: 64;segmentsHeight: 64;" 
+			material="shader: flat"; src="video/video1.mp4"  scale="-1 1 1" visible="false" rotation="0 -50 0">
+		</a-video>
 
 	</a-scene>
 	<!--  box1 right last

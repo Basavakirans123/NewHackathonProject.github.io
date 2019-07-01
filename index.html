@@ -528,7 +528,9 @@
 				var var_text3 = document.getElementById("id_text3");
 				var var_text4 = document.getElementById("id_text4");
 				var var_text5 = document.getElementById("id_text5");
-				//var var_textThankYou = document.getElementById("id_textThankYou");
+				var var_textThankYou = document.getElementById("id_textThankYou");
+				var var_textEnd = document.getElementById("id_textEnd");
+				var var_textAddress = document.getElementById("id_textAddress");
 				var var_back = document.getElementById("back");
 				var var_thankyou = document.getElementById("ent_thankyou");
 				var var_aud = document.getElementById("aud");
@@ -554,7 +556,9 @@
 					var_text3.setAttribute('value', '');
 					var_text4.setAttribute('value', '');
 					var_text5.setAttribute('value', '');
-					//var_textThankYou.setAttribute('visible','true');
+					var_textThankYou.setAttribute('visible','true');
+					var_textEnd.setAttribute('visible','true');
+					var_textAddress.setAttribute('visible','true');
 					var_back.setAttribute('visible', 'false');
 					var_thankyou.setAttribute('visible', 'true');
 					
@@ -695,17 +699,7 @@
             </script>
 			<script id="thankyou" type="text/x-nunjucks-template">
 				<image id="Thanks"  src="img\wealthPlanning\ThankYou2.jpg" width="100" height="75" position="0 6 -90" ></image>
-				<a-image id="retour" src="img\retour.png" width="6" height="1" scale="2 2 2" position="30 6 -25" rotation="0 -30 0"></a-image>
-				<a-text  value="Thank You /Merci"
-					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
-					position="-20 5 -15" rotation="0 45 0" scale="20 20 20" color="yellow">
-					
-				</a-text>
-				<a-text  value="End of Tour"
-					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
-					position="-20 20 -15" rotation="0 45 0" scale="25 25 25" color="darkblue">
-				</a-text>
-				
+				<a-image id="retour" src="img\retour.png" width="6" height="1" scale="2 2 2" position="30 6 -25" rotation="0 -30 0"></a-image>		
 				<a-sky src="#Thanks"></a-sky>
             </script>
 
@@ -797,7 +791,26 @@
 			</a-animation-->
 		</a-text>
 
-		
+		<a-text id="id_textThankYou" visible="false" value="Thank You /Merci"
+					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
+					position="-20 5 -15" rotation="0 45 0" scale="20 20 20" color="black">
+					
+		</a-text>
+		<a-text id="id_textEnd" visible="false" value="End of Tour"
+					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
+					position="-20 20 -15" rotation="0 45 0" scale="25 25 25" color="black">
+		</a-text>
+		<a-text id="id_textAddress" visible="false" 
+					value=" Societe Generale Bank & Trust\n 11 avenue Emile Reuter\n L-2420 Luxembourg\n
+					\n Reception desk\n 18 boulevard Royal\n L-2449 Luxembourg\n
+					\n Reception desk\n 18 boulevard Royal\n L-2449 Luxembourg\n
+					\n Postal Address:\n B.P. 1271 - L-1012 Luxembourg\n
+					\n Tel.: +352 47 93 11 1\nFax: +352 22 88 59\n
+					\n RCS Luxembourg B 6061\n\n\n\n
+					\n https://www.sgbt.lu/en/societe-generale-luxembourg/"
+					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
+					position="-200 30 -18" rotation="0 45 0" scale="20 20 20" color="#4E0404">
+		</a-text>
 
 
 		<a-box id="ent_text3" template='src: #text3' visible='false' text3listner></a-box>

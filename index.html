@@ -717,12 +717,14 @@
 				style="display: none"></video>
 		</a-assets-->
 		<a-assets>
-			<video muted id="vid" src="video/video1.mp4" crossOrigin="anonymous" autoplay="false" loop="true"
-				style="display: none" ></video>
+			<!--video muted id="vid" src="video/video1.mp4" crossOrigin="anonymous" autoplay="false" loop="true"
+				style="display: none" ></video-->
+			<img id="vid_sky" src="img/vid_sky.png">
+			
 		</a-assets>
 	
 		<a-assets>
-			<img id="SGLogo" src="img/logo-SG.png">s
+			<img id="SGLogo" src="img/logo-SG.png">
 			<img id="TeamName" src="img/cognitiveSquad.png">
 			<image id="langen"  src="img/en.png"></image>
 			<image id="langfr"  src="img/fr.png"></a-image>
@@ -816,9 +818,10 @@
 			rotation="-25 0 0" visible="false" control-complete></a-image>
 	
 		
-		<a-video id="ent_vid"  geometry="primitive: sphere;radius: 5000;segmentsWidth: 64;segmentsHeight: 64;" 
+		<!--a-video id="ent_vid"  geometry="primitive: sphere;radius: 5000;segmentsWidth: 64;segmentsHeight: 64;" 
 			material="shader: flat"; src="#vid"   scale="-1 1 1" visible="false" rotation="0 -50 0">
-		</a-video>
+		</a-video-->
+		<a-sky id="ent_vid" visible="false" src="#vid_sky"></a-sky>
 
 	</a-scene>
 	<!--  box1 right last

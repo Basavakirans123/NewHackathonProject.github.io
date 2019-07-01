@@ -48,6 +48,8 @@
 				var var_TN = document.getElementById("TN");
 				var var_lang_en = document.getElementById("lang_en");
 				var var_lang_fr = document.getElementById("lang_fr");
+				var var_lang_iconen = document.getElementById("lang_iconen");
+				var var_lang_iconfr = document.getElementById("lang_iconfr");
 				var var_complete = document.getElementById("complete");
 				var var_aud = document.getElementById('aud');
 				var dealy = 55000;
@@ -69,7 +71,9 @@
 						var_welcome.setAttribute('visible', 'false');
 						var_welcome2.setAttribute('visible', 'true');
 						var_lang_en.setAttribute('visible', 'false');
-						var_lang_fr.setAttribute('visible', 'false');			
+						var_lang_fr.setAttribute('visible', 'false');	
+						var_lang_iconen.setAttribute('visible', 'false');
+						var_lang_iconfr.setAttribute('visible', 'false');			
 					}, 38000);
 					setTimeout(function () {
 						vid.setAttribute('visible', 'true');
@@ -722,6 +726,7 @@
 			<img id="TeamName" src="img/cognitiveSquad.png">
 			<image id="langen"  src="img/en.png"></image>
 			<image id="langfr"  src="img/fr.png"></a-image>
+		    <img id= langicon   src="img/Langicon.png"></a-image>
 		</a-assets>
 		<a-entity camera look-controls>
 			<a-entity id="cursor_Id" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1"
@@ -823,10 +828,14 @@
 		<a-box id="TN" src="#TeamName" position="58 -30 -48" scale="8 8 8" rotation="0 -38 0"></a-box>
 		<a-image id="back" src="img/back_button.png" width="6" height="3" position="0 -18 -30" rotation="-25 0 0"
 			visible="false" control-goback></a-image>
-			<a-image id="lang_en" src="#langen" width="6" height="3" position="4 -8 -30" rotation="-25 0 0"
+		<a-image id="lang_en" src="#langen" width="6" height="3" position="4 -8 -30" rotation="-25 0 0"
 			visible="true" language_eng></a-image>
 		<a-image id="lang_fr" src="#langfr" width="6" height="3" position="-5 -8 -30" rotation="-25 0 0"
 			visible="true" language_fr></a-image>
+		<a-image id="lang_iconen" src="#langicon" width="4" height="3" position="4 -8 -30" rotation="-25 0 0"
+			visible="true" language_eng></a-image>
+		<a-image id="lang_iconfr" src="#langicon" width="4" height="3" position="-5 -8 -30" rotation="-25 0 0"
+			visible="true" language_eng></a-image>
 		<a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20"
 			rotation="-25 0 0" visible="false" control-complete></a-image>
 	

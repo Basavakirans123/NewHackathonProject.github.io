@@ -51,6 +51,7 @@
 				var var_lang_icon = document.getElementById("lang_icon");
 				var var_complete = document.getElementById("complete");
 				var var_aud = document.getElementById('aud');
+				var var_aud_underwater = document.getElementById('aud_underwater');
 				var dealy = 55000;
 				this.el.addEventListener('click', function (evt) {	
 					setTimeout(function () {
@@ -82,6 +83,8 @@
 						var_welcome2.setAttribute('visible', 'false');
 						var_logo.setAttribute('visible', 'false');
 						var_TN.setAttribute('visible', 'false');
+						var_aud_underwater.setAttribute('src', 'audio/water.mp3');
+						var_aud_underwater.play();
 					}, dealy);
 					setTimeout(function () {
 						var_box1.setAttribute('visible', 'true');
@@ -536,6 +539,7 @@
 				var var_back = document.getElementById("back");
 				var var_thankyou = document.getElementById("ent_thankyou");
 				var var_aud = document.getElementById("aud");
+				var var_aud_underwater = document.getElementById('aud_underwater');
 				this.el.addEventListener('click', function (evt) {
 					this.setAttribute('visible', 'false');
 					var_welcome.setAttribute('visible', 'false');
@@ -563,7 +567,7 @@
 					var_textAddress.setAttribute('visible','true');
 					var_back.setAttribute('visible', 'false');
 					var_thankyou.setAttribute('visible', 'true');
-					
+					var_aud_underwater.setAttribute('src', ' ');
 					if (lang == 30) {
 						var_aud.setAttribute('src', 'audio/endlinefrl.m4a');
 					}
@@ -600,7 +604,7 @@
             </script>
 			<script id="box2" type="text/x-nunjucks-template">
             <img id="boxtexture2" src="img/texture_wp.png" crossOrigin="anonymous">
-            <a-box src="#boxtexture2" position="0 1.5 -30" scale="6 6 6" rotation="150 150 150" radius="1.25" color="#00FFFF"
+            <a-box src="#boxtexture2" position="0 0.5 -30" scale="6 6 6" rotation="150 150 150" radius="1.25" color="#00FFFF"
             event-set__enter="_event: mouseenter; scale: 9 9 9"
             event-set__leave="_event: mouseleave; scale: 6 6 6">
               <a-animation attribute="rotation" from="20 0 0" to="20 360 20" direction="alternate" dur="50000" repeat="indefinite"></a-animation>
@@ -727,12 +731,13 @@
 		    <img id= langicon   src="img/Langicon.png"></a-image>
 		</a-assets>
 		<a-entity camera look-controls>
-			<a-entity id="cursor_Id" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1"
+			<a-entity id="cursor_Id" cursor="fuse: false; fuseTimeout: 1000" position="0 0 -1"
 				geometry="primitive: ring; radiusInner: 0.000001; radiusOuter: 0.01"
 				material="color: white; shader: flat">
 			</a-entity>
 		</a-entity>
 		<audio id="aud" sound ="src: ;autoplay:true"></audio>
+		<a-sound id="aud_underwater" sound ="src:;autoplay:true;loop:true" volume="0.09"></a-sound>
 		<a-box id="ent_box1" template='src: #box1' visible='false' box1listner></a-box>
 		<a-box id="ent_box2" template='src: #box2' visible='false' box2listner></a-box>
 		<a-box id="ent_box3" template='src: #box3' visible='false' box3listner></a-box>
@@ -796,12 +801,12 @@
 
 		<a-text id="id_textThankYou" visible="false" value="Thank You /Merci"
 					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
-					position="-20 5 -15" rotation="0 45 0" scale="20 20 20" color="black">
+					position="-10 5 -15" rotation="0 0 0" scale="10 10 10" color="black">
 					
 		</a-text>
 		<a-text id="id_textEnd" visible="false" value="End of Tour"
 					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
-					position="-20 20 -15" rotation="0 45 0" scale="25 25 25" color="black">
+					position="-10 10 -15" rotation="0 0 0" scale="15 15 15" color="black">
 		</a-text>
 		<a-text id="id_textAddress" visible="false" 
 					value=" Societe Generale Bank & Trust\n 11 avenue Emile Reuter\n L-2420 Luxembourg\n
@@ -810,9 +815,9 @@
 					\n Postal Address:\n B.P. 1271 - L-1012 Luxembourg\n
 					\n Tel.: +352 47 93 11 1\nFax: +352 22 88 59\n
 					\n RCS Luxembourg B 6061\n\n\n\n
-					\n https://www.sgbt.lu/en/societe-generale-luxembourg/"
+					\n https://www.sgbt.lu/en/societe-generale-luxembourg/ \n"
 					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
-					position="-200 30 -18" rotation="0 45 0" scale="25 25 25" color="#4E0404">
+					position="-125 30 45" rotation="0 90 0" scale="25 25 25" color="#4E0404">
 		</a-text>
 
 
@@ -820,7 +825,7 @@
 		<a-box id="ent_text4" template='src: #text4' visible='false' text4listner></a-box>
 		<a-box id="ent_text5" template='src: #text5' visible='false' text5listner></a-box>
 		
-		<a-image id="start" src="img/start.png" position="0 -1 -40" scale="15 15 15" rotation="0 0 0" width="1.5"
+		<a-image id="start" src="img/start.png" position="0 5 -40" scale="15 15 15" rotation="0 0 0" width="1.5"
 			height="0.5" start-tour></a-image>
 		<a-box id="logo" src="#SGLogo" position="58 30 -48" scale="8 8 8" rotation="0 -38 0"></a-box>
 		<a-box id="TN" src="#TeamName" position="58 -30 -48" scale="8 8 8" rotation="0 -38 0"></a-box>

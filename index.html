@@ -52,7 +52,7 @@
 				var var_complete = document.getElementById("complete");
 				var var_aud = document.getElementById('aud');
 				var var_aud_underwater = document.getElementById('aud_underwater');
-				var dealy = 55000;
+				var dealy = 58000;
 				this.el.addEventListener('click', function (evt) {	
 					setTimeout(function () {
 
@@ -68,12 +68,16 @@
 						vid.play();
 					}, 22000);*/
 					setTimeout(function () {
+						var_aud.setAttribute('src', 'audio/jumpSound.m4a');	
+						var_aud.play();	
+					}, 55000);
+					setTimeout(function () {
 						var_welcome.setAttribute('visible', 'false');
 						var_welcome2.setAttribute('visible', 'true');
 						var_lang_en.setAttribute('visible', 'false');
 						var_lang_fr.setAttribute('visible', 'false');	
 						var_lang_icon.setAttribute('visible', 'false');		
-					}, 38000);
+					}, 39000);
 					setTimeout(function () {
 						vid.setAttribute('visible', 'true');
 						//vid.setAttribute('src', 'video/video1.mp4');
@@ -582,9 +586,10 @@
 	</script>
 	<a-scene>
 		<a-assets>
-			<script id="welcome" type="text/x-nunjucks-template">	
+			<script id="welcome" type="text/x-nunjucks-template">
 				<image id="First"  src="img/first.jpg" ></image>
 					<a-sky src="#First" phi-start="220"> </a-sky>	
+					<a-image id="Dolphin" src="img/dol2.png" position="-46.147 -13.269 -63.873" scale="15 15 15" rotation="0 0 0" width="6" height="4" </a-image>
 			</script>
 			<script id="welcome2" type="text/x-nunjucks-template">	
 				<image id="Second"  src="img/second.jpg" ></image>
@@ -635,12 +640,14 @@
             </a-box>
             </script>
 			<script id="scene3_0" type="text/x-nunjucks-template">
-                <a-image src="img\AboutSG\image2.png" position="-1 7 -25" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
-					<a-animation attribute="position" from="-1 15 -25" to="-1 7 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>
-				<a-image src="img\AboutSG\image3.png" position="25 5 -25" scale="15 15 15" rotation="0 -90 0" width="2" height="1.5">
-					<a-animation attribute="position" from="25 15 0" to="25 5 0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>
-				<a-image src="img\AboutSG\image1.png" position="-30 5 0" scale="15 15 15" rotation="0 90 0" width="2" height="1.5">
-                    <a-animation attribute="position" from="-30 15 0" to="-30 5 -0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
+				<a-image src="img\AboutSG\image2.png" position="14 13 -25" scale="15 15 15" rotation="0 -15 0" width="2" height="1.5">
+                    <a-animation attribute="position" from="14 15 -25" to="14 5 -25" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image> 
+                <a-image src="img\AboutSG\image2.png" position="-14 5 -25" scale="15 15 15" rotation="0 15 0" width="2" height="1.5">
+                    <a-animation attribute="position" from="-14 15 -25" to="-14 5 -25" direction="alternate" dur="3000" repeat="indefinite"></a-animation></a-image>
+                <a-image src="img\AboutSG\image3.png" position="25 5 0" scale="15 15 15" rotation="0 -90 0" width="2" height="1.5">
+                    <a-animation attribute="position" from="25 15 0" to="25 5 0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>     
+                <a-image src="img\AboutSG\image1.png" position="-30 5 0" scale="15 15 15" rotation="0 90 0" width="2" height="1.5">
+                    <a-animation attribute="position" from="-30 15 0" to="-30 5 -0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image> 
                 <a-sky src="img\AboutSG\aboutSG_sky.png"></a-sky>
             </script>
 			<script id="scene3_1" type="text/x-nunjucks-template">
@@ -729,7 +736,7 @@
 		    <img id= langicon   src="img/Langicon.png"></a-image>
 		</a-assets>
 		<a-entity camera look-controls>
-			<a-entity id="cursor_Id" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1"
+			<a-entity id="cursor_Id" cursor="fuse: false; fuseTimeout: 1000" position="0 0 -1"
 				geometry="primitive: ring; radiusInner: 0.000001; radiusOuter: 0.01"
 				material="color: white; shader: flat">
 			</a-entity>
@@ -797,9 +804,9 @@
 			</a-animation-->
 		</a-text>
 
-		<a-text id="id_textThankYou" visible="false" value="Thank You /Merci"
+		<a-text id="id_textThankYou" visible="false" value="Thank You / Merci"
 					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
-					position="-10 5 -15" rotation="0 0 0" scale="10 10 10" color="black">
+					position="-10 5 -15" rotation="0 0 0" scale="10 10 10" color="#4E0404">
 					
 		</a-text>
 		<a-text id="id_textEnd" visible="false" value="End of Tour"
@@ -823,9 +830,10 @@
 		<a-box id="ent_text4" template='src: #text4' visible='false' text4listner></a-box>
 		<a-box id="ent_text5" template='src: #text5' visible='false' text5listner></a-box>
 		
-		<a-image id="start" src="img/start.png" position="0 5 -40" scale="15 15 15" rotation="0 0 0" width="1.5"
-			height="0.5" start-tour></a-image>
-		<a-box id="logo" src="#SGLogo" position="58 30 -48" scale="8 8 8" rotation="0 -38 0"></a-box>
+		<a-image id="start" src="img/start.png" position="0 3 -40" scale="15 15 15" rotation="0 0 0" width="1"
+			height="0.2" start-tour></a-image>
+		<a-box id="logo" src="#SGLogo" position="58 30 -48" scale="8 8 8" rotation="0 -38 0">
+		</a-box>
 		<a-box id="TN" src="#TeamName" position="58 -30 -48" scale="8 8 8" rotation="0 -38 0"></a-box>
 		<a-image id="back" src="img/back_button.png" width="6" height="3" position="0 -18 -30" rotation="-25 0 0"
 			visible="false" control-goback></a-image>

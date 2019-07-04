@@ -11,6 +11,7 @@
 
 <body>
 	<script type="text/javascript">
+	    var lang = '10';
 	AFRAME.registerComponent('language_eng', {
 			init: function () {
 				this.el.addEventListener('click', function (evt) {
@@ -869,7 +870,7 @@
                 scene.addEventListener('loaded', function () {
                     setTimeout(function () {
                         scene.enterVR();
-                    }, 1000);
+                    }, 5000);
                 });
             };
         })();

@@ -98,6 +98,13 @@
 		                var_text1.setAttribute('value', 'Managed\n Advisory\n Execution');
 		                var_box3.setAttribute('visible', 'true');
 		                var_text3.setAttribute('value', 'Art Advisory\n Philanthropy');
+						if (lang == 30) {
+		                    var_aud.setAttribute('src', 'audio/insidewaterguidefrl.m4a');
+		                }
+		                else {
+		                    var_aud.setAttribute('src', 'audio/insidewaterguideen.m4a');
+		                }
+		                var_aud.play();
 		            }, dealy + 1000);
 		            setTimeout(function () {
 		                var_box4.setAttribute('visible', 'true');
@@ -110,13 +117,6 @@
 		                var_box0.setAttribute('visible', 'true');
 		                var_text2.setAttribute('value', 'Wealth Planning Strategy\n Fiduciary Services\n Life Insurance');
 		                var_complete.setAttribute('visible', 'true');
-		                if (lang == 30) {
-		                    var_aud.setAttribute('src', 'audio/insidewaterguidefrl.m4a');
-		                }
-		                else {
-		                    var_aud.setAttribute('src', 'audio/insidewaterguideen.m4a');
-		                }
-		                var_aud.play();
 		            }, dealy + 3000);
 		            this.setAttribute('visible', 'false');
 		        });
@@ -645,15 +645,15 @@
             </a-box>
             </script>
 			<script id="scene3_0" type="text/x-nunjucks-template">
-				<a-image src="img\AboutSG\pic3.png" scale="15 15 15" rotation="5 -40 0" width="2" height="1.5">
-                    <a-animation attribute="position" from="14.629 15 -21.697" to="14.629 5 -21.697" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image> 
+				<a-image src="img\AboutSG\test3.png" scale="15 15 15" rotation="5 -40 0" width="2" height="1.5">
+                    <a-animation attribute="position" from="13.759 15 -20.083" to="13.759 5 -20.083" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image> 
                 <a-image src="img\AboutSG\pic4.png" scale="15 15 15" rotation="5 30 0" width="2" height="1.5">
                     <a-animation attribute="position" from="-10.868 15 -22.355" to="-10.868 5 -22.355" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>
                 <a-image src="img\AboutSG\pic2.png" scale="15 15 15" rotation="5 -90 0" width="2" height="1.5">
                     <a-animation attribute="position" from="26.189 15 4.861" to="26.189 5 4.861" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>     
                 <a-image src="img\AboutSG\pic1.png" scale="15 15 15" rotation="5 90 0" width="2" height="1.5">
                     <a-animation attribute="position" from="-23.973 15 0" to="-23.973 5 -0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image> 
-                <a-sky src="img\AboutSG\aboutSG_sky.png"></a-sky>
+                <a-sky src="img\AboutSG\aboutSG_sky.png"  phi-start="90"></a-sky>
             </script>
 			<script id="scene3_1" type="text/x-nunjucks-template">
                 <a-image src="img\InvestmentSolutions\invs22.png" scale="15 15 15" rotation="5 0 0" width="4" height="2.6">
@@ -854,8 +854,8 @@
             <a-animation attribute="rotation" from="0 0 0" to="360 0 0" direction="alternate" dur="5000" repeat="indefinite"></a-animation></a-image>
 		<a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20"
 			rotation="-25 0 0" visible="false" control-complete></a-image>
-		<a-image id="Dolphin" src="img/dol2.png" position="-40 -13.269 -42" scale="15 15 15" rotation="0 0 0" width="6" height="4">
-			<a-animation attribute="position" from="-40 -13.269 -42" to="-45 -13.269 -48" direction="alternate" dur="2000" repeat="indefinite"></a-animation> </a-image>
+		<a-image id="Dolphin" src="img/dol.png" position="-40 -13.269 -42" scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
+			<a-animation attribute="position" from="-45 -13.269 -42" to="-45 -13.269 -48" direction="alternate" dur="2000" repeat="indefinite"></a-animation> </a-image>
 		
 		<!--a-video id="ent_vid"  geometry="primitive: sphere;radius: 5000;segmentsWidth: 64;segmentsHeight: 64;" 
 			material="shader: flat"; src="#vid"   scale="-1 1 1" visible="false" rotation="0 -50 0">

@@ -49,6 +49,7 @@
 		        var var_lang_en = document.getElementById("lang_en");
 		        var var_lang_fr = document.getElementById("lang_fr");
 		        var var_lang_icon = document.getElementById("lang_icon");
+				var var_Dolphin = document.getElementById("Dolphin");
 		        var var_complete = document.getElementById("complete");
 		        var var_aud = document.getElementById('aud');
 		        var var_aud_underwater = document.getElementById('aud_underwater');
@@ -64,6 +65,10 @@
 		                    var_aud.setAttribute('src', 'audio/introductionen.m4a');
 		                }
 		                var_aud.play();
+						var_lang_en.setAttribute('visible', 'false');
+		                var_lang_fr.setAttribute('visible', 'false');
+		                var_lang_icon.setAttribute('visible', 'false');
+						var_Dolphin.setAttribute('visible', 'false');
 		            }, 000);
 		            /*setTimeout(function () {
 		            vid.play();
@@ -75,9 +80,6 @@
 		            setTimeout(function () {
 		                var_welcome.setAttribute('visible', 'false');
 		                var_welcome2.setAttribute('visible', 'true');
-		                var_lang_en.setAttribute('visible', 'false');
-		                var_lang_fr.setAttribute('visible', 'false');
-		                var_lang_icon.setAttribute('visible', 'false');
 		            }, 39000);
 		            setTimeout(function () {
 		                vid.setAttribute('visible', 'true');
@@ -591,8 +593,7 @@
 				<image id="First"  src="img/first.jpg" ></image>
 					<a-sky src="#First" phi-start="220"> 
                     </a-sky>	
-					<a-image id="Dolphin" src="img/dol2.png" position="-40 -13.269 -42" scale="15 15 15" rotation="0 0 0" width="6" height="4">
-                    <a-animation attribute="position" from="-40 -13.269 -42" to="-45 -13.269 -48" direction="alternate" dur="2000" repeat="indefinite"></a-animation> </a-image>
+					
 			</script>
 			<script id="welcome2" type="text/x-nunjucks-template">	
 				<image id="Second"  src="img/second.jpg" ></image>
@@ -649,7 +650,7 @@
                     <a-animation attribute="position" from="-8.113 15 -18.890" to="-8.113 5 -18.890" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>
                 <a-image src="img\AboutSG\pic2.png" scale="15 15 15" rotation="5 -90 0" width="2" height="1.5">
                     <a-animation attribute="position" from="21.659 15 0" to="21.659 5 0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>     
-                <a-image src="img\AboutSG\pic1.png" scale="15 15 15" rotation="5 90 0" width="2" height="1.5">
+                <a-image src="img\AboutSG\check2.png" scale="15 15 15" rotation="5 90 0" width="2" height="1.5">
                     <a-animation attribute="position" from="-20.775 15 0" to="-20.775 5 -0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image> 
                 <a-sky src="img\AboutSG\aboutSG_sky.png"></a-sky>
             </script>
@@ -852,7 +853,8 @@
             <a-animation attribute="rotation" from="0 0 0" to="360 0 0" direction="alternate" dur="5000" repeat="indefinite"></a-animation></a-image>
 		<a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20"
 			rotation="-25 0 0" visible="false" control-complete></a-image>
-	
+		<a-image id="Dolphin" src="img/dol2.png" position="-40 -13.269 -42" scale="15 15 15" rotation="0 0 0" width="6" height="4">
+			<a-animation attribute="position" from="-40 -13.269 -42" to="-45 -13.269 -48" direction="alternate" dur="2000" repeat="indefinite"></a-animation> </a-image>
 		
 		<!--a-video id="ent_vid"  geometry="primitive: sphere;radius: 5000;segmentsWidth: 64;segmentsHeight: 64;" 
 			material="shader: flat"; src="#vid"   scale="-1 1 1" visible="false" rotation="0 -50 0">

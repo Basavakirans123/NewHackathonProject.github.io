@@ -17,6 +17,12 @@
 				this.el.addEventListener('click', function (evt) {
 					lang = 20;
 				});
+				this.el.addEventListener('mouseenter', function (evt) {
+					this.setAttribute('position', '5 -8 -27');
+				});
+				this.el.addEventListener('mouseleave', function (evt) {
+					this.setAttribute('position', '5 -8 -30');
+				});
 			}
 		});
 
@@ -24,6 +30,12 @@
 			init: function () {
 				this.el.addEventListener('click', function (evt) {
 					lang = 30;
+				});
+				this.el.addEventListener('mouseenter', function (evt) {
+					this.setAttribute('position', '-2 -8 -27');
+				});
+				this.el.addEventListener('mouseleave', function (evt) {
+					this.setAttribute('position', '-2 -8 -30');
 				});
 			}
 		});
@@ -53,7 +65,7 @@
 		        var var_complete = document.getElementById("complete");
 		        var var_aud = document.getElementById('aud');
 		        var var_aud_underwater = document.getElementById('aud_underwater');
-		        var dealy = 55000;
+		        var dealy = 56000;
 		        
 		        this.el.addEventListener('click', function (evt) {
 		            setTimeout(function () {
@@ -76,7 +88,7 @@
 		            setTimeout(function () {
 		                var_aud.setAttribute('src', 'audio/jumpSound.m4a');
 		                var_aud.play();
-		            }, 54000);
+		            }, 55000);
 		            setTimeout(function () {
 		                var_welcome.setAttribute('visible', 'false');
 		                var_welcome2.setAttribute('visible', 'true');
@@ -747,7 +759,7 @@
 		    <img id= langicon   src="img/Langicon.png"></a-image>
 		</a-assets>
 		<a-entity camera look-controls>
-			<a-entity id="cursor_Id" cursor="fuse: true; fuseTimeout: 2000" position="0 0 -1"
+			<a-entity id="cursor_Id" cursor="fuse: false; fuseTimeout: 2000" position="0 0 -1"
 				geometry="primitive: ring; radiusInner: 0.000001; radiusOuter: 0.01"
 				material="color: white; shader: flat">
 			</a-entity>
@@ -831,7 +843,7 @@
 					\n Postal Address:\n B.P. 1271 - L-1012 Luxembourg\n
 					\n Tel.: +352 47 93 11 1\nFax: +352 22 88 59\n
 					\n RCS Luxembourg B 6061\n\n\n\n
-					\n https://www.sgbt.lu/en/societe-generale-luxembourg/ \n"
+					\n https://www.sgbt.lu/en/societe-generale-luxembourg/\n"
 					font="https://cdn.glitch.com/1eed6da6-c9da-46d7-bb30-b441a645ff43%2Fakzidenz.fnt?1512042049508"
 					position="-125 30 26" rotation="5 70 0" scale="25 25 25" color="#4E0404">
 		</a-text>
@@ -851,12 +863,11 @@
 			visible="false" control-goback></a-image>
 		<a-image id="lang_en" src="#langen" width="6" height="3" position="5 -8 -30" rotation="-25 0 0"
 			visible="true" language_eng>
-            <a-animation attribute="position" from="5 -8 -30" to="5 -8 -27" direction="alternate" dur="1000" repeat="indefinite"></a-animation></a-image>
+            </a-image>
 		<a-image id="lang_fr" src="#langfr" width="6" height="3" position="-2 -8 -30" rotation="-25 0 0"
-			visible="true" language_fr>
-            <a-animation attribute="position" from="-2 -8 -30" to="-2 -8 -27" direction="alternate" dur="1000" repeat="indefinite"></a-animation></a-image>
-		<a-image id="lang_icon" src="#langicon" width="6" height="3" position="-9 -9 -30" rotation="-25 0 0"
-			visible="true" language_eng>
+			visible="true" language_fr></a-image>
+		<a-image id="lang_icon" src="#langicon" width="6" height="3" position="-9 -8.102 -30" rotation="-25 0 0"
+			visible="true" >
             <a-animation attribute="rotation" from="0 0 0" to="360 0 0" direction="alternate" dur="5000" repeat="indefinite"></a-animation></a-image>
 		<a-image id="complete" src="img/complete_button.png" width="8" height="3" position="0 -18 -20"
 			rotation="-25 0 0" visible="false" control-complete></a-image>

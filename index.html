@@ -76,7 +76,7 @@
 		            setTimeout(function () {
 		                var_aud.setAttribute('src', 'audio/jumpSound.m4a');
 		                var_aud.play();
-		            }, 55000);
+		            }, 54000);
 		            setTimeout(function () {
 		                var_welcome.setAttribute('visible', 'false');
 		                var_welcome2.setAttribute('visible', 'true');
@@ -655,17 +655,17 @@
                 <a-image src="img\AboutSG\pic1.png" scale="15 15 15" rotation="5 90 0" width="2" height="1.5">
 					<a-animation attribute="position" from="-23.973 15 0" to="-23.973 5 -0" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image> 
 					<a-image src="img\AboutSG\fish.png" scale="10 10 10" rotation="5 0 0" position="-59.696 -14 -46.028" width="2" height="1.5">
-							<a-animation attribute="position" from="-100 -14 -46.028" to="100 -14 -46.028" dur="9000" repeat="indefinite"></a-animation>
+							<a-animation attribute="position" from="-250 -14 -46.028" to="250 -14 -46.028" dur="15000" repeat="indefinite"></a-animation>
 					</a-image>
                 <a-sky src="img\AboutSG\aboutSG_sky.png"  phi-start="90"></a-sky>
             </script>
 			<script id="scene3_1" type="text/x-nunjucks-template">
-                <a-image src="img\InvestmentSolutions\invs22.png" scale="15 15 15" rotation="5 0 0" width="4" height="2.6">
+                <a-image src="img\InvestmentSolutions\inv2.png" scale="15 15 15" rotation="5 0 0" width="1.5" height="3">
                     <a-animation attribute="position" from="0 15 -30" to="0 5 -30" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image> 
-                <a-image src="img\InvestmentSolutions\invs11.png" scale="15 15 15" rotation="5 45 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="-30 15 -25" to="-30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>
-                <a-image src="img\InvestmentSolutions\invs33.png" scale="15 15 15" rotation="5 -50 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="30 15 -18" to="30 5 -18" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
+                <a-image src="img\InvestmentSolutions\inv1.png" scale="15 15 15" rotation="5 55 0" width="1.5" height="3">
+                    <a-animation attribute="position" from="-30.276 15 -17.143" to="-30.276 5 -17.143" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>
+                <a-image src="img\InvestmentSolutions\inv3.png" scale="15 15 15" rotation="5 -55 0" width="1.5" height="3">
+                    <a-animation attribute="position" from="28.978 15 -15.729" to="28.978 5 -15.729" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>       
 				<a-image src="img\InvestmentSolutions\oct1.png" scale="2 2 2" rotation="5 -30 0" width="4" height="2.6">
 					<a-animation attribute="position" from="14 -3 -25" to="14 5 -25" direction="alternate" dur="6000" repeat="indefinite"></a-animation></a-image>
 				<a-image src="img\InvestmentSolutions\oct2.png" scale="3 3 3" rotation="5 -30 0" width="4" height="2.6">
@@ -705,10 +705,10 @@
 			<script id="scene3_5" type="text/x-nunjucks-template">
                 <a-image src="img\finance\financ33.png"  scale="15 15 15" rotation="0 0 0" width="4" height="2.6">
                     <a-animation attribute="position" from="0 15 -38" to="0 5 -38" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image> 
-                <a-image src="img\finance\financ11.png"  scale="15 15 15" rotation="0 50 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="-25 15 -25" to="-25 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>
-                <a-image src="img\finance\financ22.png"  scale="15 15 15" rotation="0 -50 0" width="4" height="2.6">
-                    <a-animation attribute="position" from="30 15 -25" to="30 5 -25" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>           
+                <a-image src="img\finance\fin1.png"  scale="15 15 15" rotation="0 50 0" width="2" height="1">
+                    <a-animation attribute="position" from="-20.636 15 -24.914" to="-20.636 5 -24.914" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>
+                <a-image src="img\finance\fin2.png"  scale="15 15 15" rotation="0 -50 0" width="2" height="1">
+                    <a-animation attribute="position" from="22.962 15 -23.644" to="22.962 5 -23.644" direction="alternate" dur="9000" repeat="indefinite"></a-animation></a-image>           
 				<a-image src="img\finance\jelly1.png" scale="3 3 3" >
 					<a-animation attribute="position" from="-5 -6 -15" to="-5 15 -15" direction="alternate" dur="12000" repeat="indefinite"></a-animation>
 				</a-image>
@@ -719,7 +719,10 @@
             </script>
 			<script id="thankyou" type="text/x-nunjucks-template">
 				<image id="Thanks"  src="img\wealthPlanning\ThankYou2.jpg" width="100" height="75" position="0 6 -90" ></image>
-				<a-image id="retour" src="img\retour.png" width="6" height="1" scale="2 2 2" position="15 3 -8" rotation="0 -45 0"></a-image>		
+				<a-image id="retour" src="img\retour.png" width="6" height="1" scale="2 2 2" position="15 3 -8" rotation="0 -45 0"></a-image>
+				<a-image id="squad" src="img\squad1.png" width="4" height="4" scale="2 2 2" position="15 -6 -8" rotation="0 -45 0">
+						<a-animation attribute="rotation" from="0 -45 0" to="0 -45 360" direction="alternate" dur="25000" repeat="indefinite">
+				</a-image>				
 				<a-sky src="#Thanks"></a-sky>
             </script>
 
@@ -745,13 +748,13 @@
 		    <img id= langicon   src="img/Langicon.png"></a-image>
 		</a-assets>
 		<a-entity camera look-controls>
-			<a-entity id="cursor_Id" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1"
+			<a-entity id="cursor_Id" cursor="fuse: true; fuseTimeout: 3000" position="0 0 -1"
 				geometry="primitive: ring; radiusInner: 0.000001; radiusOuter: 0.01"
 				material="color: white; shader: flat">
 			</a-entity>
 		</a-entity>
 		<audio id="aud" sound ="src: ;autoplay:true"></audio>
-		<a-sound id="aud_underwater" sound ="src:;autoplay:true;loop:true" volume="0.09"></a-sound>
+		<a-sound id="aud_underwater" sound ="src:;autoplay:true;loop:true" volume="0.1"></a-sound>
 		<a-box id="ent_box1" template='src: #box1' visible='false' box1listner></a-box>
 		<a-box id="ent_box2" template='src: #box2' visible='false' box2listner></a-box>
 		<a-box id="ent_box3" template='src: #box3' visible='false' box3listner></a-box>
